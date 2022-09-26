@@ -1,7 +1,7 @@
 export const routes = [
     
     { name: "Home", link: "/home" },
-    { name: "Stylist", link: "/stylist" },
+    { name: "Gallery", link: "/gallery" },
     { name: "Service", link: "/service" },
     { name: "Philosophy", link: "/philosophy" },
     { name: "Recruit", link: "/recruit" },

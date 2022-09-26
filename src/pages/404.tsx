@@ -7,7 +7,7 @@ export default function Custom404() {
   return (
     <>
       <SEO
-        title={"ページがありません|岡山県倉敷市の個室シェアサロン"}
+        title={"ページがありません|it's me !!}"}
         description={"こちらは普段は表示されないページです"}
         keyword={"404"}
         image={"/media/404notfound_00.jpg"}

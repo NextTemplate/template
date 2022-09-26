@@ -10,8 +10,6 @@ type Props = {
   article: Article;
 };
 
-const PER_PAGE = 5;
-
 export default function Article({ article }: Props) {
   return (
     <div className={styles.detailArea}>

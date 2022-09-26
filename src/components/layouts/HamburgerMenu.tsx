@@ -16,9 +16,9 @@ export default function HamburgerMenu() {
             <a>
               <Image
                 className={styles.navImage}
-                src={"/media/GOOD-DAY_mainLogo_05.png"}
+                src={"/main_logo.png"}
                 objectFit="contain"
-                alt="GOOD-DAY_MainLogo"
+                alt="mainlogo"
                 width={56}
                 height={56}
               />
@@ -33,8 +33,8 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/stylist" passHref>
-                <a>Stylist</a>
+              <Link href="/gallery" passHref>
+                <a>Gallery</a>
               </Link>
             </li>
             <li>
@@ -94,10 +94,10 @@ export default function HamburgerMenu() {
             </Link>
           </li> */}
           <li>
-            <Link href="/stylist" passHref>
+            <Link href="/gallery" passHref>
               <a>
-                <p className={styles.mainTitle}>Stylist</p>
-                <p className={styles.subTitle}>スタイリスト</p>
+                <p className={styles.mainTitle}>Gallery</p>
+                <p className={styles.subTitle}>作品</p>
               </a>
             </Link>
           </li>

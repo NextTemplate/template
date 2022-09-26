@@ -15,9 +15,9 @@ export default function Footer() {
             <a>
               <Image
                 className=""
-                src={"/media/GOOD-DAY_mainLogo_05.png"}
+                src={"/main_logo.png"}
                 objectFit="contain"
-                alt={"GOOD-DAY メインロゴ"}
+                alt={"メインロゴ"}
                 width={80}
                 height={80}
               />
@@ -25,13 +25,13 @@ export default function Footer() {
           </Link>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/stylist"} passHref>
+          <Link href={"/gallery"} passHref>
             <a>
-              <p className={styles.footerTitle}>Stylist</p>
+              <p className={styles.footerTitle}>Gallery</p>
             </a>
           </Link>
           <ul className={styles.footerUl}>
-            <Link href={"/stylist"} passHref>
+            <Link href={"/gallery"} passHref>
               <a>
                 <li>倉敷中島店</li>
               </a>
@@ -72,44 +72,15 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/recruit"} passHref>
-            <a>
-              <p className={styles.footerTitle}>Recruit</p>
-            </a>
-          </Link>
-          <ul className={styles.footerUl}>
-            <Link href={"/recruit/#RecruitmentSummary"} passHref>
-              <a>
-                <li>募集概要</li>
-              </a>
-            </Link>
-            <Link href={"/recruit/#FAQ"} passHref>
-              <a>
-                <li>よくある質問(FAQ)</li>
-              </a>
-            </Link>
-          </ul>
-        </div>
-        <div className={styles.footerBrock}>
           <Link href={"/company"} passHref>
             <a>
-              <p className={styles.footerTitle}>Company</p>
+              <p className={styles.footerTitle}>Contact</p>
             </a>
           </Link>
           <ul className={styles.footerUl}>
             <Link href={"/company/#NewShop"} passHref>
               <a>
-                <li>新店舗情報</li>
-              </a>
-            </Link>
-            <Link href={"/company/#Nakashima"} passHref>
-              <a>
-                <li>倉敷中島店</li>
-              </a>
-            </Link>
-            <Link href={"/company/#Corporation"} passHref>
-              <a>
-                <li>運営会社</li>
+                <li>テスト</li>
               </a>
             </Link>
           </ul>
@@ -132,7 +103,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className={styles.footerCopyLight}>&copy; 2022 OneStep inc.</p>
+      <p className={styles.footerCopyLight}>&copy; 2022 It&apos;s Me.</p>
     </footer>
   );
 }

@@ -21,14 +21,10 @@ export default function Home({ articles }: Props) {
   return (
     <>
       <SEO
-        title={"GOOD-DAY(グッディ)|岡山県倉敷市の個室シェアサロン"}
-        description={
-          "岡山県倉敷市にあるBeauty Hair Salon GOOD-DAY(グッディ)では、独立したい美容師さんを応援しています。全ての美容師に夢を与えられるようなシェアサロンを目指しています。"
-        }
-        keyword={
-          "岡山県,倉敷市,美容室,シェアサロン,GOOD-DAY,グッディ,独立,独立支援"
-        }
-        image={"/media/GOOD-DAY_mainLogo_05.png"}
+        title={""}
+        description={""}
+        keyword={""}
+        image={"/main_logo.png"}
         url={""}
       />
       <HamburgerMenu />
@@ -80,10 +76,6 @@ export default function Home({ articles }: Props) {
           ))}
         </div>
         <Staffs />
-        <Styles />
-        <MakeFriends />
-        <Works />
-        <NakashimaShopInfo />
       </div>
     </>
   );

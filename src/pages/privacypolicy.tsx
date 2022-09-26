@@ -5,10 +5,10 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <>
       <SEO
-        title={"GOOD-DAYプライバシーポリシー|岡山県倉敷市の個室シェアサロン"}
+        title={""}
         description={""}
         keyword={""}
-        image={""}
+        image={"/main_logo.png"}
         url={""}
       />
       <PersonalInformation />
