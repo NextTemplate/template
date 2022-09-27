@@ -50,7 +50,7 @@ export default function Gallery({ gallery }: Props) {
               </Link>
               {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
               {/* <div>
-                {stylistIds.map((id) => {
+                {galleryIds.map((id) => {
                   return (
                     <div key={id}>
                       {( () => {

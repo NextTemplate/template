@@ -7,12 +7,10 @@ export default function UnderNotice() {
     <>
       <div className={styles.underNotice}>
         <div className={styles.poyoyon}>
-          <Link
-            href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
-          >
+          <Link href={"/"}>
             <a>
               <button className={styles.underNoticeButton}>
-                Web予約はこちら
+                サンプルテキスト
               </button>
             </a>
           </Link>
