@@ -6,6 +6,7 @@ import { client } from "../../libs/client";
 import SEO from "../../components/layouts/SEO";
 import type { Article } from "../../types/article";
 import styles from "../../styles/Stylist/Detail.module.scss";
+import { Pagination } from "../../components/pagination/Pagination";
 
 type Props = {
   article: Article;
@@ -57,6 +58,10 @@ export default function Article({ article }: Props) {
             </div>
           </div>
         </div>
+        <Pagination
+          currentPageNumber={1}
+          maxPageNumber={Math.ceil(article.totalCount / 4)}
+        />
         <div className={styles.next}>
           <Link href={"/"} passHref>
             <a className={styles.nextInner}>

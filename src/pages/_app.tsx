@@ -1,23 +1,45 @@
 // 全てのページで一度は読み込まれる可能性がある基幹ページ
 import "../styles/globals.css";
 import "nprogress/nprogress.css";
-import { NextSeo } from "next-seo";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import NextNprogress from "nextjs-progressbar";
 import Footer from "../components/layouts/Footer";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
 
-import { googleTagManagerId } from "../utils/gtm";
-import GoogleTagManager, {
-  GoogleTagManagerId,
-} from "../components/layouts/GoogleTagManager";
+import Script from "next/script";
+import * as gtag from "../lib/gtag";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouterChange = (url: any) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouterChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouterChange);
+    };
+  }, [router.events]);
   return (
     <>
-      <GoogleTagManager
-        googleTagManagerId={googleTagManagerId as GoogleTagManagerId}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${gtag.GA_MEASUREMENT_ID}');
+          `,
+        }}
       />
       <NextNprogress
         color="aqua"
@@ -31,4 +53,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Footer />
     </>
   );
-}
+};
+
+export default MyApp;

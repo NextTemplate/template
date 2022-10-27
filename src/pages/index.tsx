@@ -8,6 +8,7 @@ import styles from "../styles/Home.module.scss";
 import type { Article } from "../types/article";
 import TopCarousel from "../components/home/TopCarousel";
 import HamburgerMenu from "../components/layouts/HamburgerMenu";
+import { Children } from "react";
 
 type Props = {
   articles: Array<Article>;
@@ -65,6 +66,7 @@ export default function Home({ articles }: Props) {
                   </Link>
                   <div className={styles.articleTag}>
                     {article.tag && <p className="">#{article.tag}</p>}
+                    <p>{article.totalCount}です</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +79,7 @@ export default function Home({ articles }: Props) {
   );
 }
 
-// データをテンプレートに受け渡す部分の処理を記述します
+// データをテンプレートに受け渡す部分の処理を記述
 export const getStaticProps = async () => {
   const data = await client.get({
     endpoint: "articles",
@@ -87,6 +89,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       articles: data.contents,
+      totalCount: data.totalCount,
     },
   };
 };

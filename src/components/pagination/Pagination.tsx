@@ -1,27 +1,23 @@
-import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import styles from "../../styles/Pagination/Pagination.module.scss";
 
-export default function Pagination() {
+export const Pagination = ({ maxPageNumber, currentPageNumber }: any) => {
+  currentPageNumber = Number(currentPageNumber);
+  maxPageNumber = Number(maxPageNumber);
+  const prevPage = currentPageNumber - 1;
+  const nextPage = currentPageNumber + 1;
+
   return (
-    <>
-      <div className={styles.nextFlex}>
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <a className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>Back</span>
-            </a>
-          </Link>
-        </div>
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <a className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>Next</span>
-            </a>
-          </Link>
-        </div>
-      </div>
-    </>
+    <div className="">
+      {currentPageNumber !== 1 && (
+        <Link href={`/article/${prevPage}`}>
+          <a>Previous</a>
+        </Link>
+      )}
+      {currentPageNumber !== maxPageNumber && (
+        <Link href={`/article/${nextPage}`}>
+          <a className="">Next</a>
+        </Link>
+      )}
+    </div>
   );
-}
+};
