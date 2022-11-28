@@ -1,7 +1,9 @@
+/* globals.cssは全てのページで読み込まれるcss */
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
+/* ここにリセットCSSを記載 */
 html,
 body {
   padding: 0;

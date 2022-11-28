@@ -1,13 +1,13 @@
 .navImage {
-    background-image: url("/media/GOOD-DAY_mainLogo_05.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 100;
- &:hover {
+   background-image: url("/media/GOOD-DAY_mainLogo_05.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: 100;
+  &:hover {
     opacity: 0.8;
+  }
  }
-}
-.mainNav {
+ .mainNav {
    background-color: #eeeeee;
    display: flex;
    opacity: 0.8;
@@ -16,79 +16,77 @@
    position: relative;
    width: 100%;
    z-index: 10;
-
+ 
    &:hover {
       opacity: 0.8;
    }
-}
-.navImageArea {
-
-}
-.navMenu {
+ }
+ .navMenu {
    display: none;
-}
-.navRow {
+ }
+ .navRow {
    align-items: center;
    display: flex;
    flex-grow: 1;
    justify-content: space-evenly;
    padding-left: 1rem;
-
-   @media screen and (max-width:767px) {
+ 
+   @media screen and (max-width:960px) {
       display: none;
    }
-}
-.navRowCharacter {
+ }
+ .navRowCharacter {
    flex-grow: 1;
-}
-.navRowCharacterSingle {
+ }
+ .navRowCharacterSingle {
    color: #333333;
    display: inline-block;
    margin: 0 1rem;
-
+ 
    &:hover {
-      color: aqua;
+      color: #0000ee;
       opacity: 0.8;
    }
-}
-.navContent {
+ }
+ .navContent {
    border: solid 1px #333333;
    border-radius: 1rem;
    border-width: 1px;
    display: inline-block;
    margin-top: 1rem;
    padding: 0.8rem 1rem;
-
+ 
    &:hover {
-      color: aqua;
+      color: #0000ee;
       opacity: 0.8;
    }
-}
-.hamburgerMenu {
+ }
+ .hamburgerMenu {
    display: none;
-
-   @media screen and (max-width:767px) {
+ 
+   @media screen and (max-width:960px) {
       display: block;
    }
-}
-.hamburgerArea {
+ }
+ .hamburgerArea {
    border-radius: 1rem;
    height: 4rem;
    margin: 0 1rem;
    position: absolute;
-      right: 0;
+   right: 0;
    width: 4rem;
-}
-.hamburgerButton {
+ }
+ .hamburgerButton {
    background-image: url("/media/push_00.png");
    background-size: cover;
    background-repeat: no-repeat;
    width: 64px;
    height: 64px;
-
+ 
    &:active {
    background-image: url("/media/push_01.png");
    background-size: cover;
    background-repeat: no-repeat;
    }
-}
+ }
+ 

@@ -2,62 +2,59 @@
     margin: 0 auto;
     padding: 1rem;
     width: 90%;
-}
-.infoTitle {
+  }
+  .infoTitle {
     font-size: 24px;
     font-weight: bold;
     height: auto;
     margin: 2rem auto;
     width: 100%;
     text-align: center;
-}
-.infoMain {
+  }
+  .infoMain {
     height: auto;
     margin: 2rem auto;
     width: 100%;
-}
-.infoTable {
+  }
+  .infoTable {
     margin: 0 auto;
-}
-.infoSubTitle {
+  }
+  .infoSubTitle {
     padding: 0 4rem 0 0;
     text-align: left;
     border-bottom: solid 1px #333333;
     width: 20%;
-
-    @media screen and (max-width:767px) {
-        padding: 0;
-        width: 24%;
+  
+    @media screen and (max-width:960px) {
+      padding: 0;
+      width: 24%;
     }
-}
-.infoTd {
+  }
+  .infoTd {
     padding: 2rem;
     border-bottom: solid 1px #333333;
     width: 80%;
     align-items: center;
-
-    @media screen and (max-width:767px) {
-        
-    }
-}
-.infoA {
+  }
+  .infoA {
     font-weight: bold;
     font-size: 24px;
-}
-.buttonArea {
+  }
+  .buttonArea {
     margin: 1rem auto;
     text-align: center;
     width: 100%;
-}
-.infoButton {
+  }
+  .infoButton {
     background: #eeeeee;
     border-radius: 32px;
     box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.4);
     padding:1rem;
-
+  
     &:hover {
-        background-color: #333333;
-        color: aqua;
-        opacity: 0.8;
+      background-color: #333333;
+      color: #0000ee;
+      opacity: 0.8;
     }
-}
+  }
+  

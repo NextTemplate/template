@@ -1,10 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Layouts/Footer.module.scss";
 import ToTopButton from "../home/ToTopButton";
-import UnderNotice from "../../components/home/UnderNotice";
+import UnderNotice from "../home/UnderNotice";
+import data from "../../data/shops.json";
 
 export default function Footer() {
+  const nakashima = data.nakashima;
+  const noda = data.noda;
   return (
     <footer className={styles.mainFooter}>
       <ToTopButton />
@@ -12,76 +15,62 @@ export default function Footer() {
       <div className={styles.footerContents}>
         <div className={styles.footerBrock}>
           <Link href={"/"} passHref>
-            <a>
-              <Image
-                className=""
-                src={"/main_logo.png"}
-                objectFit="contain"
-                alt={"メインロゴ"}
-                width={80}
-                height={80}
-              />
-            </a>
+            <Image
+              className={styles.footerImage}
+              src={"/main_logo.png"}
+              alt={"GOOD-DAY メインロゴ"}
+              width={80}
+              height={80}
+            />
           </Link>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/gallery"} passHref>
-            <a>
-              <p className={styles.footerTitle}>Gallery</p>
-            </a>
+          <Link href={"/stylist"} passHref>
+            <p className={styles.footerTitle}>Gallerys</p>
           </Link>
-          <ul className={styles.footerUl}>
-            <Link href={"/gallery"} passHref>
-              <a>
-                <li>倉敷中島店</li>
-              </a>
-            </Link>
-          </ul>
+          <div className={styles.footerUl}>
+            {nakashima.map((shop) => {
+              return (
+                <ul key={shop.shop_id}>
+                  <Link href={`/company/${shop.url}`} passHref>
+                    <li>{shop.name}</li>
+                  </Link>
+                </ul>
+              );
+            })}
+          </div>
+          <div className={styles.footerUl}>
+            {noda.map((shop) => {
+              return (
+                <ul key={shop.shop_id}>
+                  <Link href={`/company/${shop.url}`} passHref>
+                    <li>{shop.name}</li>
+                  </Link>
+                </ul>
+              );
+            })}
+          </div>
         </div>
         <div className={styles.footerBrock}>
           <Link href={"/service"} passHref>
-            <a>
-              <p className={styles.footerTitle}>Service</p>
-            </a>
+            <p className={styles.footerTitle}>Service</p>
           </Link>
           <ul className={styles.footerUl}>
             <Link href={"/service/#Customer"} passHref>
-              <a>
-                <li>お客様へ</li>
-              </a>
+              <li>お客様へ</li>
             </Link>
             <Link href={"/service/#ToStylist"} passHref>
-              <a>
-                <li>スタイリスト向け</li>
-              </a>
+              <li>スタイリスト向け</li>
             </Link>
           </ul>
         </div>
         <div className={styles.footerBrock}>
           <Link href={"/philosophy"} passHref>
-            <a>
-              <p className={styles.footerTitle}>Philosophy</p>
-            </a>
+            <p className={styles.footerTitle}>Philosophy</p>
           </Link>
           <ul className={styles.footerUl}>
             <Link href={"/philosophy"} passHref>
-              <a>
-                <li>大切にしたいこと</li>
-              </a>
-            </Link>
-          </ul>
-        </div>
-        <div className={styles.footerBrock}>
-          <Link href={"/company"} passHref>
-            <a>
-              <p className={styles.footerTitle}>Contact</p>
-            </a>
-          </Link>
-          <ul className={styles.footerUl}>
-            <Link href={"/company/#NewShop"} passHref>
-              <a>
-                <li>テスト</li>
-              </a>
+              <li>大切にしたいこと</li>
             </Link>
           </ul>
         </div>
@@ -91,19 +80,21 @@ export default function Footer() {
         <div>
           <ul className={styles.footerContentsEven}>
             <Link href={"/sitepolicy"} passHref>
-              <a>
-                <li>Webサイトの利用条件</li>
-              </a>
+              <li>Webサイトの利用条件</li>
             </Link>
             <Link href={"/privacypolicy"} passHref>
-              <a>
-                <li>プライバシーポリシー</li>
-              </a>
+              <li>プライバシーポリシー</li>
             </Link>
           </ul>
         </div>
       </div>
-      <p className={styles.footerCopyLight}>&copy; 2022 It&apos;s Me.</p>
+      <p className={styles.footerCopyLight}>&copy; 2022 it-mee.</p>
     </footer>
   );
 }
+
+export const getStaticProps = async () => {
+  return {
+    props: data,
+  };
+};

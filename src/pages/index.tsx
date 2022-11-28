@@ -1,13 +1,12 @@
 // これはTopPageを表示している
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { client } from "../libs/client";
 import SEO from "../components/layouts/SEO";
 import Garrelys from "../components/gallerys/Gallerys";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../types/article";
 import TopCarousel from "../components/home/TopCarousel";
-import HamburgerMenu from "../components/layouts/HamburgerMenu";
 import { Children } from "react";
 
 type Props = {
@@ -24,7 +23,6 @@ export default function Home({ articles }: Props) {
         image={"/main_logo.png"}
         url={""}
       />
-      <HamburgerMenu />
       <div className={styles.mainHome}>
         <TopCarousel />
         <div className={styles.articleArea}>
@@ -34,35 +32,30 @@ export default function Home({ articles }: Props) {
               <div className={styles.articleFlex}>
                 <div className={styles.articleLeft}>
                   <Link href={`/article/${article.id}`} passHref>
-                    <a>
-                      <Image
-                        className={styles.articleImage}
-                        src={article.eye_catch.url}
-                        objectFit="contain"
-                        alt={article.title + "の画像です"}
-                        width={240}
-                        height={240}
-                      />
-                    </a>
+                    <Image
+                      className={styles.articleImage}
+                      src={article.eye_catch.url}
+                      alt={article.title + "の画像です"}
+                      width={240}
+                      height={240}
+                    />
                   </Link>
                 </div>
                 <div className={styles.articleRight}>
                   <div className={styles.articleSubTitle}>
                     <Link href={`/article/${article.id}`} passHref>
-                      <a>{article.title}</a>
+                      {article.title}
                     </Link>
                   </div>
                   {/* Prevent HTML tags from being output */}
                   <Link href={`/article/${article.id}`} passHref>
-                    <a>
-                      <div className={styles.articleBody}>
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: `${article.body}`,
-                          }}
-                        />
-                      </div>
-                    </a>
+                    <div className={styles.articleBody}>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: `${article.body}`,
+                        }}
+                      />
+                    </div>
                   </Link>
                   <div className={styles.articleTag}>
                     {article.tag && <p className="">#{article.tag}</p>}

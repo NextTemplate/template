@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Service/Service.module.scss";
 
 const Works: React.FC = () => {
@@ -12,9 +12,9 @@ const Works: React.FC = () => {
           <ul className={styles.flex}>
             <li className={styles.stylistImage}>
               <Image
-                src={"/media/Stylist_00.png"}
+                src={"/media/Stylist_000.png"}
+                alt={"グッディの特徴その1"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -22,8 +22,8 @@ const Works: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_01.png"}
+                alt={"グッディの特徴その2"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -31,8 +31,8 @@ const Works: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_02.png"}
+                alt={"グッディの特徴その3"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -44,8 +44,8 @@ const Works: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_03.png"}
+                alt={"グッディの特徴その4"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -53,8 +53,8 @@ const Works: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_04.png"}
+                alt={"グッディの特徴その5"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -62,8 +62,8 @@ const Works: React.FC = () => {
             <li className={styles.stylistImage}>
               <Image
                 src={"/media/Stylist_05.png"}
+                alt={"グッディの特徴その6"}
                 objectFit="contain"
-                alt={"の画像です"}
                 width={240}
                 height={240}
               />
@@ -72,9 +72,9 @@ const Works: React.FC = () => {
         </>
         <div className={styles.next}>
           <Link href={"/recruit"} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>募集条件を見る</span>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

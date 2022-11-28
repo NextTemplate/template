@@ -5,13 +5,17 @@
   height: auto;
   opacity: 0.8;
   padding: 1rem 2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
 
   nav {
     margin-left: auto;
+
+    @media (max-width: 680px) {
+      display: none;
+    }
   }
   li {
     display: inline-block;
@@ -28,7 +32,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 520px) {
   .header {
     position: initial;
     nav {
@@ -37,7 +41,7 @@
   }
 }
 .navPC {
-  @media (max-width: 767px) {
+  @media (max-width: 520px) {
     display: none;
   }
 }
@@ -47,9 +51,10 @@
   padding: 10px 5px 0 5px;
   display: none;
   cursor: pointer;
-  position: fixed;
+  position: sticky;
   top: 20px;
   right: 40px;
+  
   span {
     background-color: white;
     width: 30px;
@@ -83,9 +88,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     background: #fafafa;
     opacity: 0.8;
@@ -96,12 +101,16 @@
   .container {
     margin: 0 0 0 auto;
     .humburger {
-      display: block;
+      display: none;
+
+      @media (max-width: 680px) {
+        display: block;
+      }
     }
   }
   .drawerMenu {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     ul {
       width: 90%;

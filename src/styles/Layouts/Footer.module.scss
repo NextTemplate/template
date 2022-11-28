@@ -11,7 +11,7 @@
   margin: 1rem auto 3rem;
   width: 96%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     display: block;
     text-align: center;
   }
@@ -24,13 +24,20 @@
   margin: 1rem auto 0;
   width: 96%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     display: block;
     text-align: center;
   }
 }
 .footerBrock {
-  padding: 1rem;
+  padding: 2rem;
+  
+  @media (max-width: 960px) {
+    padding: 1rem;
+  }
+}
+.footerImage {
+  margin: 0 auto;
 }
 .rules {
   margin: 0 auto 3rem;
@@ -39,7 +46,7 @@
 .footerTitle {
   font-weight: bold;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     text-align: center;
   }
 }

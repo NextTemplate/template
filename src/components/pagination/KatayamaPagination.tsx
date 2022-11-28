@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../../styles/Pagination/Pagination.module.scss";
 
 export default function KatayamaPagination() {
@@ -9,16 +8,16 @@ export default function KatayamaPagination() {
       <div className={styles.nextFlex}>
         <div className={styles.next}>
           <Link href={"mika"} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Back</span>
-            </a>
+            </div>
           </Link>
         </div>
         <div className={styles.next}>
-          <Link href={"nami"} passHref>
-            <a className={styles.nextInner}>
+          <Link href={"tomoya"} passHref>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Next</span>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

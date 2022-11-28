@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Carousel } from "react-responsive-carousel";
 import styles from "../../styles/Layouts/Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

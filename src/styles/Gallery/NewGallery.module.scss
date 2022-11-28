@@ -1,0 +1,421 @@
+// ━━━━━━━━━━━━━━━━━━━━
+// stylist.tsxのcss
+// ━━━━━━━━━━━━━━━━━━━━
+.mainHome {
+  
+    @media screen and (max-width:960px) {
+    }
+  }
+  .stylistArea {
+    
+  }
+  .stylistMainTitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+  .stylistMainTitleText {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 90%;
+  }
+  .stylistColumn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+  }
+  .stylistSingle {
+    background-color: #fafafa;
+    border: solid 0.1px #eeeeee;
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 32px);
+    height: auto;
+    margin: 0.6rem;
+    padding: 0;
+  
+    @media (max-width: 960px) {
+      width: calc(50% - 32px);
+      text-align: center;
+    }
+  
+    @media (max-width: 520px) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .stylistSubTitle {
+    font-size:24px;
+    font-weight: bold;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .stylistBody {
+    color: #696969;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: 72px;
+  }
+  .stylistTag {
+    font-size: 16px;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .stylistImage {
+    margin: 0 auto;
+    width: 240px;
+  }
+  .stylistDetailUrl {
+    color: #333333;
+    background-color: #eeeeee;
+    border-radius: 32px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  
+    &:hover {
+        color: #0000ee;
+        background-color: #333333;
+    }
+    @media (max-width: 960px) {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+  }
+  .next {
+    background-color: #eeeeee;
+    border-radius: 32px;
+    font-weight: bold;
+    margin: 2rem auto 2.4rem;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+  
+    @media (max-width: 960px) {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+  }
+  .nextInner {
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .nextInnerIn {
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 12px #CAD4E2, -6px -6px 12px #FFF;
+    border-radius: 10px;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    height: 50px;
+    left: 0;
+    letter-spacing: 0.1em;
+    padding: 1rem;
+    position: absolute;
+    top: -5px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    width: 100%;
+  
+    &:hover {
+      box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #FFF;
+      left: 0;
+      top: 0;
+    }
+    @media (max-width: 960px) {
+      display: inline-block;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  
+  // ガラスのcss
+  .card{
+    position : relative ;
+    z-index : 2 ;
+    display : flex ;
+    flex-direction : column ;
+    align-items : center ;
+    justify-content : flex-end ;
+    width : 280px ;
+    height : 420px ;
+    box-sizing : border-box ;
+    text-decoration : none ;
+    perspective : 700px ;
+  }
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius : 24px ;
+    backdrop-filter : blur(6px) ;
+    border : solid 2px rgba(255,255,255,.3) ;
+    background : linear-gradient( 135deg , rgba(255,255,255,.4) 8% , rgba(255,255,255,.1) 60% , rgba(255,255,255,.2) 92% ) ;
+    transition : all ease .7s ;
+    color : #fff ;
+    box-shadow : 2px 2px 3px rgba(255,255,255,.2) inset ;
+  }
+  .touch{
+    position : absolute  ;
+    z-index : 2 ;
+    width : 33.3333% ;
+    height : 33.3333% ;
+    box-sizing : border-box ;
+  }
+  .touch__1{
+    top : 0 ;
+    left : 0 ;
+  }
+  .touch__2{
+    top : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+  }
+  .touch__3{
+    top : 0 ;
+    right : 0 ;
+  }
+  .touch__4{
+    top : 33.3333% ;
+    left : 0 ;
+  }
+  .touch__6{
+    top : 33.3333% ;
+    right : 0 ;
+  }
+  .touch__7{
+    bottom : 0 ;
+    left : 0 ;
+  }
+  .touch__8{
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+  }
+  .touch__9{
+    bottom : 0 ;
+    right : 0 ;
+  }
+  .icon{
+    position : relative ;
+    z-index : 10 ;
+    width : 140px ;
+    height : 140px ;
+    border-radius : 50% ;
+    background : #fff ;
+    overflow : hidden ;
+    transition : all ease 1s ;
+  }
+  .img{
+    width : 100% ;
+  }
+  .name{
+    position : relative ;
+    z-index : 1 ;
+    font-size : 14px ;
+    margin : 16px 0 8px ;
+  }
+  .account{
+    position : relative ;
+    z-index : 1 ;
+    display : block ;
+    font-size : 10px ;
+    text-decoration : none ;
+    color : #ddd ;
+    margin : 0 0 32px 0 ;
+  }
+  .text{
+    position : relative ;
+    width : 100% ;
+    margin : 0 ;
+    box-sizing : border-box ;
+    border-radius : 8px ;
+    transition : all ease 1s ;
+  }
+  .link{
+    z-index : 4 ;
+    display : flex ;
+    justify-content : center ; 
+    align-items : center ;
+    padding : 8px 16px ;
+    color : #fff ;
+    background : linear-gradient( 90deg , #2ad2ff , #00e998 ) ;
+  }
+  .comment{
+    z-index : 3 ;
+    padding : 12px;
+    font-size : 12px ;
+    line-height : 1.4 ;
+    color : #444 ;
+    background : #FFF ;
+  }
+  .link:not(:last-child){
+    margin-bottom : 16px ;
+  }
+  .touch__1:hover ~ .board{
+    transform : rotateX(20deg) rotateY(-20deg) rotateZ(10deg);
+  }
+  .touch__1:hover ~ .board .icon{
+    transform : translateX(-20px) translateY(-10px) translateZ(60px);
+    box-shadow : 20px 20px 24px rgba(0,0,0,.2) ;
+  }
+  .touch__2:hover ~ .board{
+    transform : rotateX(20deg) rotateY(0) rotateZ(0);
+  }
+  .touch__2:hover ~ .board .icon{
+    transform : translateX(0) translateY(-10px) translateZ(60px);
+    box-shadow : 0 20px 24px rgba(0,0,0,.2) ;
+  }
+  .touch__3:hover ~ .board{
+    transform : rotateX(20deg) rotateY(20deg) rotateZ(-10deg);
+  }
+  .touch__3:hover ~ .board .icon{
+    transform : translateX(20px) translateY(-10px) translateZ(60px);
+    box-shadow : -20px 20px 24px rgba(0,0,0,.2) ;
+  }
+  .touch__4:hover ~ .board{
+    transform : rotateX(0) rotateY(-40deg) rotateZ(0);
+  }
+  .touch__6:hover ~ .board{
+    transform : rotateX(0) rotateY(40deg) rotateZ(0);
+  }
+  .touch__7:hover ~ .board{
+    transform : rotateX(-20deg) rotateY(-20deg) rotateZ(-10deg);
+  }
+  .touch__7:hover ~ .board .text{
+    transform : translateX(-20px) translateY(10px) translateZ(60px);
+    box-shadow : 20px -20px 24px rgba(0,0,0,.2) ;
+  }
+  .touch__8:hover ~ .board{
+    transform : rotateX(-20deg) rotateY(0) rotateZ(0);
+  }
+  .touch__8:hover ~ .board .text{
+    transform : translateX(0) translateY(10px) translateZ(60px);
+    box-shadow : 0 -20px 24px rgba(0,0,0,.2) ;
+  }
+  .touch__9:hover ~ .board{
+    transform : rotateX(-20deg) rotateY(20deg) rotateZ(10deg);
+  }
+  .touch__9:hover ~ .board .text{
+    transform : translateX(20px) translateY(10px) translateZ(60px);
+    box-shadow : -20px -20px 24px rgba(0,0,0,.2) ;
+  }
+  
+  /* 本体には関係ないスタイル */
+  .container{
+    align-items : center ;
+    background-color : hsla(205,100%,13%,1) ;
+    background-image:
+    radial-gradient(at 49% 49%, hsla(191,77%,26%,1) 0px, transparent 50%),
+    radial-gradient(at 99% 44%, hsla(208,62%,38%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(208,39%,40%,1) 0px, transparent 50%),
+    radial-gradient(at 62% 100%, hsla(192,71%,38%,1) 0px, transparent 50%),
+    radial-gradient(at 1% 100%, hsla(196,77%,18%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 69%, hsla(200,45%,39%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(191,52%,49%,1) 0px, transparent 50%);
+    border-radius: 24px;
+    position : relative ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    font-family : sans-serif ;
+  }
+  .circle{
+    position : absolute ;
+    z-index : 1 ;
+    aspect-ratio : 1 / 1 ;
+    box-sizing : border-box ;
+    border-radius : 16px ;
+    animation : rotate ease infinite ;
+  }
+  .circle_1{
+    top : 60px ;
+    left : 100px ;
+    width : 120px ;
+    background : #0097c8 ;
+    animation-duration : 20s ;
+    animation-direction : alternate ;
+  }
+  .circle_2{
+    top : 40px ;
+    right : 120px ;
+    width : 80px ;
+    border : solid 4px rgba(255,255,255,.3) ;
+    animation-duration : 25s ;
+    animation-direction : alternate-reverse ;
+  }
+  .circle_3{
+    top : 240px ;
+    left : 200px ;
+    width : 60px ;
+    border : solid 4px rgba(255,255,255,.3) ;
+    animation-duration : 21s ;
+    animation-direction : alternate-reverse ;
+  }
+  .circle_4{
+    top : 220px ;
+    right : 20px ;
+    width : 100px ;
+    border : solid 4px #0097c8 ;
+    animation-duration : 22s ;
+    animation-direction : alternate ;
+  }
+  .circle_5{
+    bottom : 170px ;
+    left : 50px ;
+    width : 80px ;
+    background : rgba(255,255,255,.3);
+    animation-duration : 18s ;
+    animation-direction : alternate ;
+  }
+  .circle_6{
+    bottom : 70px ;
+    right : 140px ;
+    width : 70px ;
+    background : rgba(255,255,255,.3) ;
+    animation-duration : 26s ;
+    animation-direction : alternate-reverse ;
+  }
+  .circle_7{
+    bottom : 60px ;
+    left : 240px ;
+    width : 50px ;
+    border : solid 4px #0097c8 ;
+    animation-duration : 24s ;
+    animation-direction : alternate ;
+  }
+  .circle_8{
+    top : 340px ;
+    right : 200px ;
+    width : 50px ;
+    background : #0097c8 ;
+    animation-duration : 25s ;
+    animation-direction : alternate-reverse ;
+  }
+  @keyframes rotate{
+    0%  { transform : rotate(0) ;}
+    100%{ transform : rotate(360deg) ;}
+  }
+  

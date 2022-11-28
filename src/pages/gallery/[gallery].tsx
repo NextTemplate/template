@@ -1,12 +1,11 @@
 // ここはGallery単体のPageを表示している
 import { GetServerSideProps } from "next";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { client } from "../../libs/client";
 import SEO from "../../components/layouts/SEO";
 import type { Gallery } from "../../types/gallery";
 import styles from "../../styles/Stylist/Detail.module.scss";
-import HamburgerMenu from "../../components/layouts/HamburgerMenu";
 
 type Props = {
   gallery: Gallery;
@@ -23,30 +22,25 @@ export default function Gallery({ gallery }: Props) {
         image={gallery.eye_catch.url}
         url={`/gallery/${gallery.id}`}
       />
-      <HamburgerMenu />
       <div className={styles.detailArea}>
         <Link href={"/gallery"} passHref>
-          <a>
-            <h2 className={styles.detailMainTitle}>Gallery</h2>
-          </a>
+          <h2 className={styles.detailMainTitle}>Gallery</h2>
         </Link>
         <div className={styles.detailFlex}>
           <div className={styles.detailImage}>
             <Image
               className=""
               src={gallery.eye_catch.url}
-              objectFit="contain"
               alt={gallery.title + "の画像です"}
               width={1000}
               height={720}
+              objectFit="contain"
             />
           </div>
           <div className={styles.detailRight}>
             <div>
               <Link href={gallery.id} passHref>
-                <a>
-                  <div className={styles.detailSubTitle}>{gallery.title}</div>
-                </a>
+                <div className={styles.detailSubTitle}>{gallery.title}</div>
               </Link>
               {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
               {/* <div>
@@ -102,14 +96,6 @@ export default function Gallery({ gallery }: Props) {
                   }}
                 />
               </div>
-              {/* ボタン
-              <div className={styles.next}>
-                <Link href={gallery.id} passHref>
-                  <a className={styles.nextInner}>
-                    <span className={styles.nextInnerIn}>詳しく見る</span>
-                  </a>
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
@@ -127,30 +113,30 @@ export default function Gallery({ gallery }: Props) {
             <Image
               className=""
               src={gallery.img1.url}
-              objectFit="contain"
               alt={gallery.img1 + "のスタイルです。"}
               width={800}
               height={800}
+              objectFit="contain"
             />
           </div>
           <div className={styles.detailStyleImage}>
             <Image
               className=""
               src={gallery.img2.url}
-              objectFit="contain"
               alt={gallery.title + "のスタイルです。"}
               width={800}
               height={800}
+              objectFit="contain"
             />
           </div>
           <div className={styles.detailStyleImage}>
             <Image
               className=""
               src={gallery.img3.url}
-              objectFit="contain"
               alt={gallery.title + "のスタイルです。"}
               width={800}
               height={800}
+              objectFit="contain"
             />
           </div>
         </div>
@@ -162,9 +148,9 @@ export default function Gallery({ gallery }: Props) {
         </p>
         <div className={styles.next}>
           <Link href={gallery.id} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>View More</span>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../../styles/Pagination/Pagination.module.scss";
 
 export default function FujiiPagination() {
@@ -9,16 +8,16 @@ export default function FujiiPagination() {
       <div className={styles.nextFlex}>
         <div className={styles.next}>
           <Link href={"ikemoto"} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Back</span>
-            </a>
+            </div>
           </Link>
         </div>
         <div className={styles.next}>
           <Link href={"john"} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Next</span>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

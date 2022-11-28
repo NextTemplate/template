@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Layouts/UnderNotice.module.scss";
 
 export default function UnderNotice() {
@@ -7,12 +7,12 @@ export default function UnderNotice() {
     <>
       <div className={styles.underNotice}>
         <div className={styles.poyoyon}>
-          <Link href={"/"}>
-            <a>
-              <button className={styles.underNoticeButton}>
-                サンプルテキスト
-              </button>
-            </a>
+          <Link
+            href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
+          >
+            <button className={styles.underNoticeButton}>
+              Web予約はこちら
+            </button>
           </Link>
         </div>
       </div>

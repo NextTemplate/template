@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../../styles/SNS/SNS.module.scss";
 
 export default function NamiSNS() {
@@ -8,19 +7,13 @@ export default function NamiSNS() {
     <>
       <div className={styles.sns}>
         <Link href={"https://beauty.hotpepper.jp/slnH000524394/blog/"} passHref>
-          <a>
-            <div className={styles.blog}></div>
-          </a>
+          <div className={styles.blog}></div>
         </Link>
         <Link href={"https://www.instagram.com/toukunami.ono"} passHref>
-          <a>
-            <div className={styles.instagram}></div>
-          </a>
+          <div className={styles.instagram}></div>
         </Link>
         <Link href={"https://lin.ee/aEvDxH3"} passHref>
-          <a>
-            <div className={styles.line}></div>
-          </a>
+          <div className={styles.line}></div>
         </Link>
       </div>
     </>

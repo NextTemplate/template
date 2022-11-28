@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Layouts/Info.module.scss";
 
 export default function Info() {
@@ -44,9 +44,7 @@ export default function Info() {
         </div>
         <div className={styles.buttonArea}>
           <Link href={"/"}>
-            <a>
-              <button className={styles.infoButton}>Web予約はこちらから</button>
-            </a>
+            <button className={styles.infoButton}>Web予約はこちらから</button>
           </Link>
         </div>
       </div>

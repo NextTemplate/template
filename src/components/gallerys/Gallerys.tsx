@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Stylist/Staff.module.scss";
 
 // clientに接続してgalleryの画像を拾ってくるようにしよう
 const Garrelys: React.FC = () => {
   const images = [
+    "/media/BLOG_icon.png",
+    "/media/BLOG_icon.png",
     "/media/BLOG_icon.png",
     "/media/BLOG_icon.png",
     "/media/BLOG_icon.png",
@@ -25,18 +27,16 @@ const Garrelys: React.FC = () => {
             {images.map((image) => {
               return (
                 <Link href={"/"} passHref key={image}>
-                  <a>
-                    <li className={styles.stylistImage}>
-                      <Image
-                        className={styles.stylistImageHover}
-                        src={image}
-                        objectFit="contain"
-                        alt={"作品"}
-                        width={240}
-                        height={240}
-                      />
-                    </li>
-                  </a>
+                  <li className={styles.stylistImage}>
+                    <Image
+                      className={styles.stylistImageHover}
+                      src={image}
+                      objectFit="contain"
+                      alt={"作品"}
+                      width={240}
+                      height={240}
+                    />
+                  </li>
                 </Link>
               );
             })}

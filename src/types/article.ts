@@ -18,4 +18,3 @@ export type Article = {
   keyword: string;
   url: string;
 };
-  

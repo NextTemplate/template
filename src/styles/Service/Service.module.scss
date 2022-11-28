@@ -3,7 +3,7 @@
   margin: 5.8rem auto 2rem;
   width: 90%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     margin-top: 7.8rem;
     margin-bottom: 0;
     padding: 1rem;
@@ -15,10 +15,43 @@
   font-weight: bold;
   margin: 2rem;
   text-align: center;
+
+  @media (max-width: 960px) {
+    font-size: 24px;
+    margin: 1rem;
+  }
 }
 .featuresMainSubTitle {
   margin: 1rem 0 4rem 0;
   text-align: center;
+}
+.featuresItem {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 30%;
+
+  @media (max-width: 960px) {
+    padding: 1rem;
+  }
+
+  @media (max-width: 520px) {
+    border: dotted 8px #eeeeee;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+.featuresImage {
+  width: 100%;
+
+  @media (max-width: 960px) {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @media (max-width: 520px) {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .featuresTitle {
   border-bottom: solid 1px #333333;
@@ -43,7 +76,7 @@
   padding: 0.4rem;
   width: 20%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     width: 40%;
     margin-bottom: 2rem;
   }
@@ -82,6 +115,7 @@
   letter-spacing: 0.1em;
   position: absolute;
   top: -5px;
+  text-align: center;
   text-decoration: none;
   transition-duration: 0.2s;
   width: 100%;
@@ -97,7 +131,14 @@
   justify-content: space-around;
   padding: 2rem 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 520px) {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -111,7 +152,7 @@
 .stylistImage {
   filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     margin-bottom: 2rem;
   }
 }

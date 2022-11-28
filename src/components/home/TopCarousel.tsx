@@ -1,35 +1,61 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Carousel } from "react-responsive-carousel";
 import styles from "../../styles/Layouts/Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const TopCarousel = () => {
   const images: string[] = [
-    "/media/main_slider_00.jpg",
-    "/media/main_slider_01.jpg",
-    "/media/main_slider_02.jpg",
+    "/media/404notfound_00.jpg",
+    "/media/404notfound_00.jpg",
+    "/media/404notfound_00.jpg",
   ];
   return (
     <>
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
-        interval={4000}
+        interval={8000}
         showArrows={true}
         showThumbs={false}
         statusFormatter={() => ``}
       >
-        {images.map((url, index) => (
-          <div key={index}>
+        <div>
+          <div className={`${styles.zoom} ${styles.zoom1}`}>
             <Image
-              src={url}
-              height={1250}
+              className={`${styles.carousel} ${styles.zoomImage0}`}
+              src={images[0]}
+              alt={"GOOD-DAY岡山野田店スタイリスト募集中"}
               width={2000}
-              alt={"Topスライダーです"}
+              height={1250}
             />
           </div>
-        ))}
+          <Link href={`/recruit`} passHref>
+            <p className={styles.carouselInfo}>詳しく見る</p>
+          </Link>
+        </div>
+        <div>
+          <div className={`${styles.zoom} ${styles.zoom1}`}>
+            <Image
+              className={`${styles.carousel} ${styles.zoomImage1}`}
+              src={images[1]}
+              alt={"GOOD-DAY岡山野田店"}
+              width={2000}
+              height={1250}
+            />
+          </div>
+        </div>
+        <div>
+          <div className={`${styles.zoom} ${styles.zoom1}`}>
+            <Image
+              className={`${styles.carousel} ${styles.zoomImage2}`}
+              src={images[2]}
+              alt={"GOOD-DAY倉敷中島店"}
+              width={2000}
+              height={1250}
+            />
+          </div>
+        </div>
       </Carousel>
     </>
   );

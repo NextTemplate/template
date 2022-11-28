@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../../styles/Pagination/Pagination.module.scss";
 
 export default function NamiPagination() {
@@ -8,17 +7,17 @@ export default function NamiPagination() {
     <>
       <div className={styles.nextFlex}>
         <div className={styles.next}>
-          <Link href={"katayama"} passHref>
-            <a className={styles.nextInner}>
+          <Link href={"tomoya"} passHref>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Back</span>
-            </a>
+            </div>
           </Link>
         </div>
         <div className={styles.next}>
           <Link href={"maho"} passHref>
-            <a className={styles.nextInner}>
+            <div className={styles.nextInner}>
               <span className={styles.nextInnerIn}>Next</span>
-            </a>
+            </div>
           </Link>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../../styles/Layouts/MakeFriends.module.scss";
 
 const MakeFriends: React.FC = () => {
@@ -12,16 +12,13 @@ const MakeFriends: React.FC = () => {
               href={"https://page.line.me/153jsnax?openQrModal=true"}
               passHref
             >
-              <a>
-                <Image
-                  className={styles.friendsImage}
-                  src={"/media/QR_LINE.png"}
-                  objectFit="contain"
-                  alt={"の画像です"}
-                  width={240}
-                  height={240}
-                />
-              </a>
+              <Image
+                className={styles.friendsImage}
+                src={"/media/QR_LINE.png"}
+                alt={"友達追加はこちらから"}
+                width={240}
+                height={240}
+              />
             </Link>
           </div>
           <div className={styles.friendsRight}>
@@ -30,9 +27,7 @@ const MakeFriends: React.FC = () => {
                 href={"https://page.line.me/153jsnax?openQrModal=true"}
                 passHref
               >
-                <a>
-                  <h2>お友達追加はこちら</h2>
-                </a>
+                <h2>お友達追加はこちら</h2>
               </Link>
             </div>
             {/* Prevent HTML tags from being output */}
@@ -40,20 +35,18 @@ const MakeFriends: React.FC = () => {
               href={"https://page.line.me/153jsnax?openQrModal=true"}
               passHref
             >
-              <a>
-                <div className={styles.friendsBody}>
-                  GOOD-DAYでスタイリストとして働いてみたいという美容師さん。お気軽にご連絡ください。
-                </div>
-              </a>
+              <div className={styles.friendsBody}>
+                GOOD-DAYでスタイリストとして働いてみたいという美容師さん。お気軽にご連絡ください。
+              </div>
             </Link>
             <div className={styles.next}>
               <Link
                 href={"https://page.line.me/153jsnax?openQrModal=true"}
                 passHref
               >
-                <a className={styles.nextInner}>
+                <div className={styles.nextInner}>
                   <span className={styles.nextInnerIn}>Add Friends</span>
-                </a>
+                </div>
               </Link>
             </div>
           </div>

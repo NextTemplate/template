@@ -2,10 +2,10 @@
   color: red;
 }
 .mainArea {
-  margin: 5.8rem auto 4rem;
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
 
-  @media screen and (max-width:767px) {
+  @media screen and (max-width:960px) {
     margin-top: 7.8rem;
     width: 96%;
   }
@@ -52,7 +52,7 @@
   padding: 1rem;
 }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 960px) {
   .menuTablLast .menuTableTd:last-child {
     border-bottom: solid 1px #cccccc;
     text-align: center;
@@ -66,6 +66,15 @@
     border-bottom: solid 1px #cccccc;
     display: block;
     width: 100%;
+  }
+}
+.qrImage {
+  &:hover {
+    border: solid 4px;
+    opacity: 0.8;
+  }
+  @media (max-width: 960px) {
+    margin: 0 auto;
   }
 }
 .textBold {
@@ -82,10 +91,10 @@
   width: 30%;
 
   &:hover {
-    color: aqua;
+    color: #0000ee;
     background-color: #333333;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     width: 80%;
     margin-bottom: 2rem;
   }
