@@ -1,7 +1,7 @@
 // Overviewは、CustomerとToStylistの2つをサービスに渡す
 import Link from "next/link";
-import Customer from "../../components/service/Customer";
-import ToStylist from "../../components/service/ToStylist";
+import Customer from "./Customer";
+import ToStylist from "./ToStylist";
 import styles from "../../styles/Service/Service.module.scss";
 
 const Overview: React.FC = () => {

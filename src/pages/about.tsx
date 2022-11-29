@@ -1,5 +1,5 @@
 import SEO from "../components/layouts/SEO";
-import Overview from "../components/service/Overview";
+import Overview from "../components/about/Overview";
 
 const Service: React.FC = () => {
   return (

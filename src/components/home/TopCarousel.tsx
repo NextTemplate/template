@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const TopCarousel = () => {
   const images: string[] = [
-    "/media/404notfound_00.jpg",
+    "/media/main_00.png",
     "/media/404notfound_00.jpg",
     "/media/404notfound_00.jpg",
   ];
@@ -30,8 +30,8 @@ const TopCarousel = () => {
               height={1250}
             />
           </div>
-          <Link href={`/recruit`} passHref>
-            <p className={styles.carouselInfo}>詳しく見る</p>
+          <Link href={`/gallery`} passHref>
+            <p className={styles.carouselInfo}>View More</p>
           </Link>
         </div>
         <div>
@@ -44,6 +44,9 @@ const TopCarousel = () => {
               height={1250}
             />
           </div>
+          <Link href={`/gallery`} passHref>
+            <p className={styles.carouselInfo}>View More</p>
+          </Link>
         </div>
         <div>
           <div className={`${styles.zoom} ${styles.zoom1}`}>
@@ -55,6 +58,9 @@ const TopCarousel = () => {
               height={1250}
             />
           </div>
+          <Link href={`/gallery`} passHref>
+            <p className={styles.carouselInfo}>View More</p>
+          </Link>
         </div>
       </Carousel>
     </>

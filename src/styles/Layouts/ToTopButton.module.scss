@@ -1,36 +1,26 @@
-.toTopButton {
-    animation: toTopButton 3s infinite ease-in-out .8s alternate;
-    background: url("/media/toTopPageButton_01.png") no-repeat center center / 64px auto;
-    border: none;
-    display: inline-block;
-    transition: 1.6s ease-in-out;
-    position: fixed;
-    right: 2rem;
-    bottom: 8rem;
-    width: 64px;
-    height: 64px;
-    z-index: 2;
-    margin-top: 16px;
-
-    &:hover {
-        // filter: drop-shadow(1px 1px 12px #fafafa);
-        opacity: 0.8;
-    }
-
-    @media screen and (max-width:960px) {
-        right: 2rem;
-        bottom: 4rem;
-    }
+@keyframes rotateRightZAnime {
+from {
+    transform: rotateZ(0);
+  }
+to {
+    transform: rotateZ(360deg);
+  }
 }
-    // ふわふわアニメーションの動きを指定
-    @keyframes toTopButton {
-    0% {
-        transform:translate(0, 0) rotate(-7deg);
-    }
-    50% {
-        transform:translate(0, -7px) rotate(0deg);
-    }
-    100% {
-        transform:translate(0, 0) rotate(7deg);
-    }
+.toTopButton {
+  animation: rotateRightZAnime 8s ease-in-out alternate infinite;
+  background: url("/media/toTop.png") no-repeat center center / 64px auto;
+  border: none;
+  display: inline-block;
+  position: fixed;
+  right: 2rem;
+  bottom: 8rem;
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+  margin-top: 16px;
+
+  @media screen and (max-width:960px) {
+    right: 2rem;
+    bottom: 5rem;
+  }
 }

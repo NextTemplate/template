@@ -9,7 +9,7 @@ export default function Footer() {
   const nakashima = data.nakashima;
   const noda = data.noda;
   return (
-    <footer className={styles.mainFooter}>
+    <footer className={`${styles.mainFooter} ${styles.animeBody}`}>
       <ToTopButton />
       <UnderNotice />
       <div className={styles.footerContents}>
@@ -52,15 +52,28 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/service"} passHref>
-            <p className={styles.footerTitle}>Service</p>
+          <Link href={"/about"} passHref>
+            <p className={styles.footerTitle}>About</p>
           </Link>
           <ul className={styles.footerUl}>
-            <Link href={"/service/#Customer"} passHref>
-              <li>お客様へ</li>
+            <Link href={"/about"} passHref>
+              <li>リンク</li>
             </Link>
-            <Link href={"/service/#ToStylist"} passHref>
-              <li>スタイリスト向け</li>
+            <Link href={"/about"} passHref>
+              <li>リンク</li>
+            </Link>
+          </ul>
+        </div>
+        <div className={styles.footerBrock}>
+          <Link href={"/gallery"} passHref>
+            <p className={styles.footerTitle}>Gallery</p>
+          </Link>
+          <ul className={styles.footerUl}>
+            <Link href={"/gallery"} passHref>
+              <li>リンク</li>
+            </Link>
+            <Link href={"/gallery"} passHref>
+              <li>リンク</li>
             </Link>
           </ul>
         </div>
@@ -75,7 +88,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className={styles.rules}>
+      {/* <div className={styles.rules}>
         <p className={styles.footerTitle}>Webサイトのご利用について</p>
         <div>
           <ul className={styles.footerContentsEven}>
@@ -87,8 +100,8 @@ export default function Footer() {
             </Link>
           </ul>
         </div>
-      </div>
-      <p className={styles.footerCopyLight}>&copy; 2022 it-mee.</p>
+      </div> */}
+      <p className={styles.footerCopyLight}>&copy; 2022 it-me.</p>
     </footer>
   );
 }

@@ -1,8 +1,10 @@
+$bgColor : #eeeeee;
+
 .underNotice {
   display: none;
 
   @media screen and (max-width:960px) {
-    background-color: #333333;
+    background-color: $bgColor;
     color: #fafafa;
     display: block;
     opacity: 0.9;
@@ -23,9 +25,9 @@
   }
 
   @media screen and (max-width:960px) {
-    background-color: #333333;
+    background-color: $bgColor;
     border: none;
-    color: #fafafa;
+    color: #333333;
     display: block;
     font-weight: bold;
     height: auto;

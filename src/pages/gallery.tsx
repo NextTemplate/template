@@ -44,6 +44,7 @@ export default function Gallery({ gallerys }: Props) {
                   <div className={`${styles.touch} ${styles.touch__9}`}></div>
                   <div className={styles.board}>
                     <Image
+                      className={styles.stylistImage}
                       src={gallery.eye_catch.url}
                       objectFit="contain"
                       alt={gallery.title + "の画像です"}

@@ -47,8 +47,9 @@
 }
 .humburger {
   background-color: rgb(34, 35, 36);
+  
   color: white;
-  padding: 10px 5px 0 5px;
+  padding: 1rem 0.4rem 0 0.4rem;
   display: none;
   cursor: pointer;
   position: sticky;
@@ -83,7 +84,7 @@
   z-index: -100;
   &.open {
     height: 100vh;
-    opacity: 1;
+    opacity: 0.8;
     z-index: 100;
   }
 }
@@ -148,10 +149,10 @@
   }
   .close {
     cursor: pointer;
-    margin-top: 28px;
-    padding-right: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
     span {
-      background-color: white;
+      background-color: #fafafa;
       width: 30px;
       height: 1px;
       display: block;

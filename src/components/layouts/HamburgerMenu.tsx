@@ -30,13 +30,13 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/gallery" passHref>
-                gallery
+              <Link href="/about" passHref>
+                About
               </Link>
             </li>
             <li>
-              <Link href="/service" passHref>
-                Service
+              <Link href="/gallery" passHref>
+                gallery
               </Link>
             </li>
             <li>
@@ -65,15 +65,21 @@ export default function HamburgerMenu() {
             <p>Close</p>
           </div>
           <li>
-            <Link href="/stylist" passHref>
-              <p className={styles.mainTitle}>Gallery</p>
-              <p className={styles.subTitle}>作品</p>
+            <Link href="/" passHref>
+              <p className={styles.mainTitle}>Home</p>
+              <p className={styles.subTitle}>ホーム</p>
             </Link>
           </li>
           <li>
-            <Link href="/service" passHref>
-              <p className={styles.mainTitle}>Service</p>
-              <p className={styles.subTitle}>サービス</p>
+            <Link href="/about" passHref>
+              <p className={styles.mainTitle}>About</p>
+              <p className={styles.subTitle}>私について</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/gallery" passHref>
+              <p className={styles.mainTitle}>Gallery</p>
+              <p className={styles.subTitle}>作品一覧</p>
             </Link>
           </li>
           <li>

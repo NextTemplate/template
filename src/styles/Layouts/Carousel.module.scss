@@ -2,7 +2,7 @@
   position: relative;
 }
 .carouselInfo {
-  background: linear-gradient(#ffffff, #ffff00);
+  background: linear-gradient(#fafafa, #333333);
   border-radius: 8px;
   bottom: 6rem;
   color: #333333;
@@ -19,7 +19,7 @@
   width: 40%;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 1;
   }
 
   @media (max-width: 960px) {
