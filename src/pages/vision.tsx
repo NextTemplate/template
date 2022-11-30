@@ -1,5 +1,5 @@
 import SEO from "../components/layouts/SEO";
-import Features from "../components/philosophy/Features";
+import Features from "../components/vision/Features";
 
 const Service: React.FC = () => {
   return (

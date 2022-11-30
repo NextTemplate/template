@@ -40,8 +40,8 @@ export default function HamburgerMenu() {
               </Link>
             </li>
             <li>
-              <Link href="/philosophy" passHref>
-                Philosophy
+              <Link href="/vision" passHref>
+                Vision
               </Link>
             </li>
           </ul>
@@ -84,8 +84,8 @@ export default function HamburgerMenu() {
           </li>
           <li>
             <Link href="/philosophy" passHref>
-              <p className={styles.mainTitle}>philosophy</p>
-              <p className={styles.subTitle}>理念</p>
+              <p className={styles.mainTitle}>Vision</p>
+              <p className={styles.subTitle}>目指す姿</p>
             </Link>
           </li>
         </ul>

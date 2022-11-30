@@ -59,7 +59,6 @@ export default function Home({ articles }: Props) {
                   </Link>
                   <div className={styles.articleTag}>
                     {article.tag && <p className="">#{article.tag}</p>}
-                    <p>{article.totalCount}です</p>
                   </div>
                 </div>
               </div>

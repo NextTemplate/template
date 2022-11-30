@@ -26,76 +26,85 @@ export default function Gallery({ gallery }: Props) {
         <Link href={"/gallery"} passHref>
           <h2 className={styles.detailMainTitle}>Gallery</h2>
         </Link>
-        <div className={styles.detailFlex}>
-          <div className={styles.detailImage}>
-            <Image
-              className=""
-              src={gallery.eye_catch.url}
-              alt={gallery.title + "の画像です"}
-              width={1000}
-              height={720}
-              objectFit="contain"
-            />
-          </div>
-          <div className={styles.detailRight}>
-            <div>
-              <Link href={gallery.id} passHref>
-                <div className={styles.detailSubTitle}>{gallery.title}</div>
-              </Link>
-              {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
-              {/* <div>
-                {galleryIds.map((id) => {
-                  return (
-                    <div key={id}>
-                      {( () => {
-                        if (!id == null) {
-                          return <></>;
-                        } else if (id == 1) {
-                          return <KatayamaSNS />;
-                        } else if (id == 2) {
-                          return <MikaSNS />;
-                        } else if (id == 3) {
-                          return <NozomiSNS />;
-                        } else if (id == 4) {
-                          return <NatsukiSNS />;
-                        } else if (id == 5) {
-                          return <DaiSNS />;
-                        } else if (id == 6) {
-                          return <JohnSNS />;
-                        } else if (id == 7) {
-                          return <FujiiSNS />;
-                        } else if (id == 8) {
-                          return <IkemotoSNS />;
-                        } else if (id == 9) {
-                          return <MaiSNS />;
-                        } else if (id == 10) {
-                          return <YukaSNS />;
-                        } else if (id == 11) {
-                          return <MahoSNS />;
-                        } else if (id == 12) {
-                          return <NamiSNS />;
-                        }
-                      }) () };
-                    </div>
-                  );
-                })}
-              </div> */}
-              <div className={styles.tag}>
-                {gallery.tag && (
-                  <div className={styles.detailTag}>
-                    <div className="">#{gallery.tag}</div>
-                  </div>
-                )}
-              </div>
+        <div className={styles.detail}>
+          <div className={styles.detailFlex}>
+            <div className={styles.detailImage}>
+              <Image
+                className=""
+                src={gallery.eye_catch.url}
+                alt={gallery.title + "の画像です"}
+                width={1000}
+                height={720}
+                objectFit="contain"
+              />
+            </div>
+            <div className={styles.detailRight}>
               <div>
-                {/* Prevent HTML tags from being output */}
-                <div
-                  className={styles.detailProfile}
-                  dangerouslySetInnerHTML={{
-                    __html: `${gallery.profile}`,
-                  }}
-                />
+                <div className={styles.detailSubTitle}>{gallery.title}</div>
+                {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
+                {/* <div>
+                  {galleryIds.map((id) => {
+                    return (
+                      <div key={id}>
+                        {( () => {
+                          if (!id == null) {
+                            return <></>;
+                          } else if (id == 1) {
+                            return <KatayamaSNS />;
+                          } else if (id == 2) {
+                            return <MikaSNS />;
+                          } else if (id == 3) {
+                            return <NozomiSNS />;
+                          } else if (id == 4) {
+                            return <NatsukiSNS />;
+                          } else if (id == 5) {
+                            return <DaiSNS />;
+                          } else if (id == 6) {
+                            return <JohnSNS />;
+                          } else if (id == 7) {
+                            return <FujiiSNS />;
+                          } else if (id == 8) {
+                            return <IkemotoSNS />;
+                          } else if (id == 9) {
+                            return <MaiSNS />;
+                          } else if (id == 10) {
+                            return <YukaSNS />;
+                          } else if (id == 11) {
+                            return <MahoSNS />;
+                          } else if (id == 12) {
+                            return <NamiSNS />;
+                          }
+                        }) () };
+                      </div>
+                    );
+                  })}
+                </div> */}
+                <div className={styles.tag}>
+                  {gallery.tag && (
+                    <div className={styles.detailTag}>
+                      <div className="">#{gallery.tag}</div>
+                    </div>
+                  )}
+                </div>
+                <div>
+                  {/* Prevent HTML tags from being output */}
+                  <div
+                    className={styles.detailProfile}
+                    dangerouslySetInnerHTML={{
+                      __html: `${gallery.profile}`,
+                    }}
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.detailBottom}>
+            <div className={styles.next}>
+              <Link href={gallery.url} passHref>
+                <div className={styles.nextInner}>
+                  <span className={styles.nextInnerIn}>Origin URL</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -140,16 +149,16 @@ export default function Gallery({ gallery }: Props) {
             />
           </div>
         </div>
-        <p className={styles.menuDetail}>
+        {/* <p className={styles.menuDetail}>
           ※所要時間につきましては、当日の予約状況により変動する可能性もございます。
         </p>
         <p className={styles.menuDetail}>
           ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
-        </p>
+        </p> */}
         <div className={styles.next}>
-          <Link href={gallery.id} passHref>
+          <Link href={"/"} passHref>
             <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>View More</span>
+              <span className={styles.nextInnerIn}>to Top</span>
             </div>
           </Link>
         </div>

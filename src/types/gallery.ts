@@ -15,7 +15,7 @@ export type Gallery = {
   tag: string;
   profile: string;
   body: string;
-  // url: string;
+  url: string;
   img1: {
     url: string;
     height: number;

@@ -3,11 +3,12 @@ import Image from "next/legacy/image";
 import styles from "../../styles/Layouts/Footer.module.scss";
 import ToTopButton from "../home/ToTopButton";
 import UnderNotice from "../home/UnderNotice";
-import data from "../../data/shops.json";
+import data from "../../data/footer.json";
 
 export default function Footer() {
-  const nakashima = data.nakashima;
-  const noda = data.noda;
+  const about = data.about;
+  const gallery = data.gallery;
+  const vision = data.vision;
   return (
     <footer className={`${styles.mainFooter} ${styles.animeBody}`}>
       <ToTopButton />
@@ -18,74 +19,47 @@ export default function Footer() {
             <Image
               className={styles.footerImage}
               src={"/main_logo.png"}
-              alt={"GOOD-DAY メインロゴ"}
+              alt={"メインロゴ"}
               width={80}
               height={80}
             />
           </Link>
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/stylist"} passHref>
-            <p className={styles.footerTitle}>Gallerys</p>
-          </Link>
-          <div className={styles.footerUl}>
-            {nakashima.map((shop) => {
-              return (
-                <ul key={shop.shop_id}>
-                  <Link href={`/company/${shop.url}`} passHref>
-                    <li>{shop.name}</li>
-                  </Link>
-                </ul>
-              );
-            })}
-          </div>
-          <div className={styles.footerUl}>
-            {noda.map((shop) => {
-              return (
-                <ul key={shop.shop_id}>
-                  <Link href={`/company/${shop.url}`} passHref>
-                    <li>{shop.name}</li>
-                  </Link>
-                </ul>
-              );
-            })}
-          </div>
-        </div>
-        <div className={styles.footerBrock}>
           <Link href={"/about"} passHref>
             <p className={styles.footerTitle}>About</p>
           </Link>
-          <ul className={styles.footerUl}>
+          {/* <ul className={styles.footerUl}>
             <Link href={"/about"} passHref>
               <li>リンク</li>
             </Link>
             <Link href={"/about"} passHref>
               <li>リンク</li>
             </Link>
-          </ul>
+          </ul> */}
         </div>
         <div className={styles.footerBrock}>
           <Link href={"/gallery"} passHref>
             <p className={styles.footerTitle}>Gallery</p>
           </Link>
-          <ul className={styles.footerUl}>
+          {/* <ul className={styles.footerUl}>
             <Link href={"/gallery"} passHref>
               <li>リンク</li>
             </Link>
             <Link href={"/gallery"} passHref>
               <li>リンク</li>
             </Link>
-          </ul>
+          </ul> */}
         </div>
         <div className={styles.footerBrock}>
-          <Link href={"/philosophy"} passHref>
-            <p className={styles.footerTitle}>Philosophy</p>
+          <Link href={"/vision"} passHref>
+            <p className={styles.footerTitle}>Vision</p>
           </Link>
-          <ul className={styles.footerUl}>
-            <Link href={"/philosophy"} passHref>
+          {/* <ul className={styles.footerUl}>
+            <Link href={"/vision"} passHref>
               <li>大切にしたいこと</li>
             </Link>
-          </ul>
+          </ul> */}
         </div>
       </div>
       {/* <div className={styles.rules}>

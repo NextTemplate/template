@@ -1,3 +1,20 @@
+@keyframes rotateSpinZAnime {
+from {
+    transform: rotateZ(0);
+  }
+to {
+    transform: rotateZ(360deg);
+  }
+}
+// 小刻みに動くタイプ
+@keyframes rotateSpinTickAnime {
+from {
+    transform: rotateZ(45);
+  }
+to {
+    transform: rotateZ(135deg);
+  }
+}
 .main {
   height: auto;
   margin: 2rem auto;
@@ -129,10 +146,29 @@
     margin-bottom: 2rem;
   }
 }
-.stylistImageHover {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0.2rem;
+.rotate0 {
+  animation: rotateSpinTickAnime 1s ease-in-out alternate infinite;
+}
+.rotate1 {
+  animation: rotateSpinZAnime 28s ease-in-out alternate infinite;
+}
+.rotate2 {
+  animation: rotateSpinZAnime 12s ease-in-out alternate infinite;
+}
+.rotate3 {
+  animation: rotateSpinZAnime 24s ease-in-out alternate infinite;
+}
+.rotate4 {
+  animation: rotateSpinZAnime 8s ease-in-out alternate infinite;
+}
+.rotate5 {
+  animation: rotateSpinZAnime 20s ease-in-out alternate infinite;
+}
+.rotate6 {
+  animation: rotateSpinZAnime 16s ease-in-out alternate infinite;
+}
+.rotate7 {
+  animation: rotateSpinZAnime 32s ease-in-out alternate infinite;
 }
 .stylistCaption {
   font-size: 24px;

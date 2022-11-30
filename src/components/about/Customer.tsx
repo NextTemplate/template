@@ -5,108 +5,71 @@ import styles from "../../styles/Service/Service.module.scss";
 const Customer: React.FC = () => {
   return (
     <>
-      <div id="Customer" className={styles.main}>
-        <h2 className={styles.featuresMainTitle}>GOOD-DAYのこだわり</h2>
-        <p className={styles.featuresMainSubTitle}>お客様へ</p>
+      <div id="Customer">
         <>
-          <ul className={styles.flex}>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_00.png"}
-                alt={"こだわり1"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>完全個別対応</p>
-              <p className={styles.featuresMainSubTitle}>
-                一人のスタイリストが全て担当。
-              </p>
-            </li>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_01.png"}
-                alt={"こだわり2"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>待ち時間ゼロ</p>
-              <p className={styles.featuresMainSubTitle}>
-                完全予約制だからスムーズにご案内。
-              </p>
-            </li>
-          </ul>
-        </>
-        <>
-          <ul className={styles.flex}>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_02.png"}
-                alt={"こだわり3"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>営業時間長め</p>
-              <p className={styles.featuresMainSubTitle}>
-                遅い時間までやってます。
-                <br />
-                (詳しくはお問合せください)
-              </p>
-            </li>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_03.png"}
-                alt={"こだわり4"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>全て個室</p>
-              <p className={styles.featuresMainSubTitle}>
-                お部屋は半個室・個室で安心です。
-              </p>
-            </li>
-          </ul>
-        </>
-        <>
-          <ul className={styles.flex}>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_04.png"}
-                alt={"こだわり5"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>スマホで楽々予約</p>
-              <p className={styles.featuresMainSubTitle}>
-                簡単に予約ができちゃいます。
-              </p>
-            </li>
-            <li className={styles.featuresItem}>
-              <Image
-                className={styles.featuresImage}
-                src={"/media/Customer_05.png"}
-                alt={"こだわり6"}
-                width={240}
-                height={240}
-              />
-              <p className={styles.featuresMainTitle}>安心の技術補償</p>
-              <p className={styles.featuresMainSubTitle}>
-                1週間以内のお直し無料です。
-              </p>
-            </li>
-          </ul>
+          <div className={styles.area}>
+            <table className={styles.table}>
+              <tbody>
+                <tr>
+                  <th className={styles.tableTh}>小澤 達也</th>
+                  <td className={styles.tableTd}>
+                    <Image
+                      alt="icon"
+                      className=""
+                      height={250}
+                      objectFit="contain"
+                      src="/media/Me_00.png"
+                      width={250}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th className={styles.tableTh}>スキルセット</th>
+                  <td className={styles.tableTd}>
+                    <Image
+                      alt="SkillSet"
+                      className=""
+                      height={1000}
+                      objectFit="contain"
+                      src="/media/SkillSet_02.png"
+                      width={1000}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th className={styles.tableTh}>来歴</th>
+                  <td className={styles.tableTd}>
+                    <ul className={styles.textLeft}>
+                      <li>
+                        美容師として3年間勤務し、怪我のリハビリをきっかけに別業界に転職。
+                      </li>
+                      <br />
+                      <li>
+                        エンターテイメント業界にて、ビジネスコンサル兼インハウスデザイナーとして勤務後、webフロントエンドエンジニアへ転身。
+                      </li>
+                      <br />
+                      <li>
+                        不動産業界のweb制作に特化した渋谷の企業にてフロントエンドエンジニアとして勤務後、妻の家族の療養を理由に岡山県へと移住。
+                      </li>
+                      <br />
+                      <li>
+                        現在は岡山県の企業でインハウスデザイナー兼、シェアサロンビジネスのプロダクトマネージャーとして求人、採用、広告管理、webマーケティング、DTPの作成と広くヘアサロンに関わる。
+                      </li>
+                      <br />
+                      <li>
+                        インハウスデザイナーとしての経験を活かし、家族のためにフルリモート勤務、または近い環境で勤務できる企業様を探しています。
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </>
         <div className={styles.next}>
-          <Link
-            href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
-            passHref
-          >
+          <Link href={"/"} passHref>
             <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>Web予約はこちら</span>
+              <span className={styles.nextInnerIn}>back to Home</span>
             </div>
           </Link>
         </div>

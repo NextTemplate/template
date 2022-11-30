@@ -1,0 +1,24 @@
+{
+  "about": [
+    {
+      "id": "1",
+      "link": "/about",
+      "title": "About"
+    }
+  ],
+    "gallery": [
+    {
+      "id": "2",
+      "link": "/gallery",
+      "title": "Gallery"
+    }
+  ],
+  "vision": [
+    {
+      "id": "3",
+      "link": "/vision",
+      "title": "Vision"
+    }
+  ]
+}
+  
