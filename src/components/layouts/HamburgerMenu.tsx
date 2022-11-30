@@ -36,7 +36,7 @@ export default function HamburgerMenu() {
             </li>
             <li>
               <Link href="/gallery" passHref>
-                gallery
+                Gallery
               </Link>
             </li>
             <li>

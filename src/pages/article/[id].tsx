@@ -55,12 +55,14 @@ export default function Article({ article }: Props) {
             </div>
           </div>
         </div>
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>Topに戻る</span>
-            </div>
-          </Link>
+        <div className={styles.margin3rem}>
+          <div className={styles.next}>
+            <Link href={"/"} passHref>
+              <div className={styles.nextInner}>
+                <span className={styles.nextInnerIn}>Topに戻る</span>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </>
