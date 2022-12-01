@@ -75,7 +75,7 @@ export default function Footer() {
           </ul>
         </div>
       </div> */}
-      <p className={styles.footerCopyLight}>&copy; 2022 it-me.</p>
+      <p className={styles.footerCopyLight}>&copy; 2022 it-mee.</p>
     </footer>
   );
 }
