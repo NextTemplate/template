@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
+import Button from "../../components/layouts/Button";
 import styles from "../../styles/Service/Service.module.scss";
 
 const Customer: React.FC = () => {
@@ -66,13 +67,9 @@ const Customer: React.FC = () => {
             </table>
           </div>
         </>
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>back to Home</span>
-            </div>
-          </Link>
-        </div>
+        <Link href={"/"}>
+          <Button children={"戻る"} />
+        </Link>
       </div>
     </>
   );

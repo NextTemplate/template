@@ -1,0 +1,64 @@
+/* ボタンのアニメーション設定 */
+@keyframes blinkFont {
+  0% {
+    color: aqua;
+  }
+  100% {
+    color: #eeeeee;
+  }
+}
+@keyframes blinkBorder {
+  0% {
+    border: 8px solid aqua;
+  }
+  100% {
+    border: 8px solid #eeeeee;
+  }
+}
+.btn {
+  background: #eeeeee;
+  background-image: url("/media/basis_00.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  display: block;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  height: auto;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+
+  @media (max-width: 960px) {
+    font-size: 16px;
+    text-align: center;
+  }
+  &:hover {
+    animation: blinkFont 1s ease infinite alternate;
+  }
+}
+// ボタンを選択した時に現在値をインタラクティブに視認させる
+.btnBlink {
+  border: solid 8px #fafafa;
+  border-radius: 16px;
+  margin: 2rem auto;
+  height: auto;
+  width: 30%;
+
+  &:hover {
+    box-sizing: border-box;
+    animation: blinkBorder 1s ease infinite alternate;
+  }
+
+  @media (max-width: 960px) {
+    width: 50%;
+  }
+  @media (max-width: 520px) {
+    width: 70%;
+  }
+}

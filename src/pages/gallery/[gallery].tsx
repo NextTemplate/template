@@ -5,6 +5,7 @@ import Link from "next/link";
 import { client } from "../../libs/client";
 import SEO from "../../components/layouts/SEO";
 import type { Gallery } from "../../types/gallery";
+import Button from "../../components/layouts/Button";
 import styles from "../../styles/Stylist/Detail.module.scss";
 
 type Props = {
@@ -98,15 +99,11 @@ export default function Gallery({ gallery }: Props) {
               </div>
             </div>
           </div>
-          <div className={styles.detailBottom}>
-            <div className={styles.next}>
-              <Link href={gallery.url} passHref>
-                <div className={styles.nextInner}>
-                  <span className={styles.nextInnerIn}>Origin URL</span>
-                </div>
-              </Link>
-            </div>
-          </div>
+          <Link href={gallery.url} passHref>
+            <Button
+              children={"Origin URL"}
+            />
+          </Link>
         </div>
         <div className={styles.detailBody}>
           {/* Prevent HTML tags from being output */}
@@ -155,13 +152,11 @@ export default function Gallery({ gallery }: Props) {
         <p className={styles.menuDetail}>
           ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
         </p> */}
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>to Top</span>
-            </div>
-          </Link>
-        </div>
+        <Link href={"/"} passHref>
+          <Button
+            children={"Topに戻る"}
+          />
+        </Link>
       </div>
     </>
   );

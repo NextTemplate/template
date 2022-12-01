@@ -8,6 +8,7 @@ import styles from "../styles/Home.module.scss";
 import type { Article } from "../types/article";
 import TopCarousel from "../components/home/TopCarousel";
 import { Children } from "react";
+import Button from "../components/layouts/Button";
 
 type Props = {
   articles: Array<Article>;
@@ -66,6 +67,12 @@ export default function Home({ articles }: Props) {
           ))}
         </div>
         <Garrelys />
+        <Link href={"/gallery"} passHref>
+          <Button
+            className={styles.btn}
+            children={"View More"}
+          />
+        </Link>
       </div>
     </>
   );
