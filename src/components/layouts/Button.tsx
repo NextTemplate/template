@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "../../styles/Layouts/Button.module.scss";
 
-const Button = ({ children }: any) => {
+const Button = ({ props }: any) => {
   return (
     <>
       <div className={styles.btnBlink}>
-        <button className={styles.btn}>{children}</button>
+        <button className={styles.btn}>{props}</button>
       </div>
     </>
   );
-}
+};
 
 export default Button;

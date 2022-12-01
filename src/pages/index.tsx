@@ -68,10 +68,7 @@ export default function Home({ articles }: Props) {
         </div>
         <Garrelys />
         <Link href={"/gallery"} passHref>
-          <Button
-            className={styles.btn}
-            children={"View More"}
-          />
+          <Button props={"View More"} />
         </Link>
       </div>
     </>

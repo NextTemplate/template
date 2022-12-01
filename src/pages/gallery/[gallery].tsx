@@ -100,9 +100,7 @@ export default function Gallery({ gallery }: Props) {
             </div>
           </div>
           <Link href={gallery.url} passHref>
-            <Button
-              children={"Origin URL"}
-            />
+            <Button props={"Origin URL"} />
           </Link>
         </div>
         <div className={styles.detailBody}>
@@ -153,9 +151,7 @@ export default function Gallery({ gallery }: Props) {
           ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
         </p> */}
         <Link href={"/"} passHref>
-          <Button
-            children={"Topに戻る"}
-          />
+          <Button props={"Topに戻る"} />
         </Link>
       </div>
     </>

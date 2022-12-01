@@ -68,7 +68,7 @@ const Customer: React.FC = () => {
           </div>
         </>
         <Link href={"/"}>
-          <Button children={"戻る"} />
+          <Button props={"戻る"} />
         </Link>
       </div>
     </>
