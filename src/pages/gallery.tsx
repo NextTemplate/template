@@ -11,7 +11,7 @@ type Props = {
   gallerys: Array<Gallery>;
 };
 
-export default function Gallery({ gallerys }: Props) {
+const Gallery = ({ gallerys }: Props) => {
   return (
     <>
       <SEO
@@ -25,6 +25,7 @@ export default function Gallery({ gallerys }: Props) {
         <div className={styles.stylistArea}>
           <h2 className={styles.stylistMainTitle}>Gallery</h2>
           <div className={styles.stylistMainTitleText}>作品一覧</div>
+
           <div className={styles.stylistColumn}>
             {gallerys.map((gallery) => (
               <div className={styles.container} key={gallery.id}>
@@ -80,7 +81,7 @@ export default function Gallery({ gallerys }: Props) {
       </div>
     </>
   );
-}
+};
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
@@ -95,3 +96,5 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+export default Gallery;

@@ -12,8 +12,9 @@ type Props = {
   gallery: Gallery;
 };
 
-export default function Gallery({ gallery }: Props) {
+const Gallery = ({ gallery }: Props) => {
   const galleryIds: number[] = [gallery.gallery_id];
+  const checkURL: boolean = false;
   return (
     <>
       <SEO
@@ -99,9 +100,13 @@ export default function Gallery({ gallery }: Props) {
               </div>
             </div>
           </div>
-          <Link href={gallery.url} passHref>
-            <Button props={"Origin URL"} />
-          </Link>
+          {checkURL ? (
+            <Link href={gallery.url} passHref>
+              <Button props={"Origin URL"} />
+            </Link>
+          ) : (
+            <></>
+          )}
         </div>
         <div className={styles.detailBody}>
           {/* Prevent HTML tags from being output */}
@@ -156,7 +161,7 @@ export default function Gallery({ gallery }: Props) {
       </div>
     </>
   );
-}
+};
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const gallery = ctx.params?.gallery;
@@ -172,3 +177,5 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     },
   };
 };
+
+export default Gallery;
