@@ -14,7 +14,6 @@ type Props = {
 
 const Gallery = ({ gallery }: Props) => {
   const galleryIds: number[] = [gallery.gallery_id];
-  const checkURL: boolean = true;
   return (
     <>
       <SEO
@@ -43,44 +42,6 @@ const Gallery = ({ gallery }: Props) => {
             <div className={styles.detailRight}>
               <div>
                 <div className={styles.detailSubTitle}>{gallery.title}</div>
-                {/* ここでstylistIdを認識して、各自のSNSメニューを表示する */}
-                {/* <div>
-                  {galleryIds.map((id) => {
-                    return (
-                      <div key={id}>
-                        {( () => {
-                          if (!id == null) {
-                            return <></>;
-                          } else if (id == 1) {
-                            return <KatayamaSNS />;
-                          } else if (id == 2) {
-                            return <MikaSNS />;
-                          } else if (id == 3) {
-                            return <NozomiSNS />;
-                          } else if (id == 4) {
-                            return <NatsukiSNS />;
-                          } else if (id == 5) {
-                            return <DaiSNS />;
-                          } else if (id == 6) {
-                            return <JohnSNS />;
-                          } else if (id == 7) {
-                            return <FujiiSNS />;
-                          } else if (id == 8) {
-                            return <IkemotoSNS />;
-                          } else if (id == 9) {
-                            return <MaiSNS />;
-                          } else if (id == 10) {
-                            return <YukaSNS />;
-                          } else if (id == 11) {
-                            return <MahoSNS />;
-                          } else if (id == 12) {
-                            return <NamiSNS />;
-                          }
-                        }) () };
-                      </div>
-                    );
-                  })}
-                </div> */}
                 <div className={styles.tag}>
                   {gallery.tag && (
                     <div className={styles.detailTag}>
@@ -189,3 +150,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 };
 
 export default Gallery;
+
