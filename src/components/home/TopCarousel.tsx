@@ -5,11 +5,7 @@ import styles from "../../styles/Layouts/Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const TopCarousel = () => {
-  const images: string[] = [
-    "/media/main_00.png",
-    "/media/flyer_01.png",
-    "/media/404notfound_00.jpg",
-  ];
+  const images: string[] = ["/media/main_00.png", "/media/flyer_01.png"];
   return (
     <>
       <Carousel
@@ -48,7 +44,7 @@ const TopCarousel = () => {
             <p className={styles.carouselInfo}>View More</p>
           </Link>
         </div>
-        <div>
+        {/* <div>
           <div className={`${styles.zoom} ${styles.zoom1}`}>
             <Image
               className={`${styles.carousel} ${styles.zoomImage2}`}
@@ -61,7 +57,7 @@ const TopCarousel = () => {
           <Link href={`/gallery`} passHref>
             <p className={styles.carouselInfo}>View More</p>
           </Link>
-        </div>
+        </div> */}
       </Carousel>
     </>
   );

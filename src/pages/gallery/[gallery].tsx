@@ -100,7 +100,6 @@ const Gallery = ({ gallery }: Props) => {
               </div>
             </div>
           </div>
-
           <div>
             {galleryIds.map((id) => {
               return (

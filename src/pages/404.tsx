@@ -7,10 +7,10 @@ export default function Custom404() {
   return (
     <>
       <SEO
-        title={"ページがありません|岡山県倉敷市の個室シェアサロン"}
+        title={"ページがありません| page is notfound"}
         description={"こちらは普段は表示されないページです"}
         keyword={"404"}
-        image={"/media/404notfound_00.jpg"}
+        image={"/media/404notfound_00.png"}
         url={""}
       />
       <main className={styles.detailArea}>
@@ -27,10 +27,10 @@ export default function Custom404() {
         <div className={styles.detailImage}>
           <Image
             className=""
-            src={"/media/404notfound_00.jpg"}
+            src={"/media/404notfound_00.png"}
             alt={"ページがありません。"}
-            width={1000}
-            height={1000}
+            width={2000}
+            height={1250}
           />
         </div>
         <div className={styles.next}>
