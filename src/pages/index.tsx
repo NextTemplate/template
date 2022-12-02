@@ -39,6 +39,7 @@ export default function Home({ articles }: Props) {
                       alt={article.title + "の画像です"}
                       width={240}
                       height={240}
+                      objectFit={"contain"}
                     />
                   </Link>
                 </div>
