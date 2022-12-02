@@ -7,9 +7,7 @@ export default function UnderNotice() {
     <>
       <div className={styles.underNotice}>
         <div className={styles.poyoyon}>
-          <Link
-            href={"/"}
-          >
+          <Link href={"/"}>
             <button className={styles.underNoticeButton}>to Top</button>
           </Link>
         </div>

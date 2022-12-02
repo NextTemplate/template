@@ -105,15 +105,15 @@ const Gallery = ({ gallery }: Props) => {
             {galleryIds.map((id) => {
               return (
                 <div key={id}>
-                  { gallery.url === undefined ? ( 
-                  <></>
+                  {gallery.url === undefined ? (
+                    <></>
                   ) : (
-                  <>
-                    <Link href={gallery.url} passHref>
-                      <Button props={"Origin URL"} />
-                    </Link>
-                  </>
-                )}
+                    <>
+                      <Link href={gallery.url} passHref>
+                        <Button props={"Origin URL"} />
+                      </Link>
+                    </>
+                  )}
                 </div>
               );
             })}
