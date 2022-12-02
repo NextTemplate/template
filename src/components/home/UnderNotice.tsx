@@ -8,9 +8,9 @@ export default function UnderNotice() {
       <div className={styles.underNotice}>
         <div className={styles.poyoyon}>
           <Link
-            href={"https://sam004.salonanswer.com/sas/reserve/goodday/staff"}
+            href={"/"}
           >
-            <button className={styles.underNoticeButton}>Contact</button>
+            <button className={styles.underNoticeButton}>to Top</button>
           </Link>
         </div>
       </div>

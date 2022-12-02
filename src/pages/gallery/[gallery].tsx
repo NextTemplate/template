@@ -14,7 +14,7 @@ type Props = {
 
 const Gallery = ({ gallery }: Props) => {
   const galleryIds: number[] = [gallery.gallery_id];
-  const checkURL: boolean = false;
+  const checkURL: boolean = true;
   return (
     <>
       <SEO
@@ -100,13 +100,24 @@ const Gallery = ({ gallery }: Props) => {
               </div>
             </div>
           </div>
-          {checkURL ? (
-            <Link href={gallery.url} passHref>
-              <Button props={"Origin URL"} />
-            </Link>
-          ) : (
-            <></>
-          )}
+
+          <div>
+            {galleryIds.map((id) => {
+              return (
+                <div key={id}>
+                  { gallery.url === undefined ? ( 
+                  <></>
+                  ) : (
+                  <>
+                    <Link href={gallery.url} passHref>
+                      <Button props={"Origin URL"} />
+                    </Link>
+                  </>
+                )}
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className={styles.detailBody}>
           {/* Prevent HTML tags from being output */}
