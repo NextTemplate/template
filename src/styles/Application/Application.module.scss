@@ -1,0 +1,192 @@
+.applicationFlowArea {
+  margin: 0 auto 4rem;
+  width: 90%;
+  height: auto;
+}
+.flexA {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.flexB {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  @media screen and (max-width:960px) {
+        
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.flexE {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.applicationFlowMainTitle {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  @media screen and (max-width:960px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width:520px) {
+    
+  }
+}
+.applicationFlowSubTitle {
+  font-size: 24px;
+  padding: 1rem 0;
+  text-align: center;
+  @media screen and (max-width:960px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width:520px) {
+    
+  }
+}
+.flow {
+  text-align: center;
+  width: 10%;
+  height: auto;
+
+  @media screen and (max-width:520px) {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+.allowImagePC {
+    padding-top: 4rem;
+    width: 5%;
+  @media screen and (max-width:960px) {
+    padding-top: 3rem;
+  }
+  @media screen and (max-width:520px) {
+    display: none;
+  } 
+}
+.allowImageSP {
+    display: none;
+  @media screen and (max-width:520px) {
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+    text-align: center;
+    width: 50%;
+  } 
+}
+.applicationText {
+  padding: 1rem;
+  text-align: center;
+}
+.applicationArea {
+  margin: 2rem auto;
+  width: 100%;
+  height: auto;
+}
+.applicationTopArea {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.applicationTopImg {
+  width: 100%;
+
+  @media screen and (max-width:960px) {
+
+  }
+  @media screen and (max-width:520px) {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+.applicationTopTitle {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 1rem;
+
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    font-size: 24px;
+  }
+}
+.applicationTopText {
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+.applicationUnderArea {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.applicationUnderTitle {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1rem;
+
+  @media screen and (max-width:960px) {
+
+  }
+  @media screen and (max-width:520px) {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.applicationUnderText {
+  padding: 1rem;
+
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    padding: 0;
+  }
+}
+.applicationUnderLeft {
+  padding: 1rem;
+  width: 50%;
+
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.applicationUnderRight {
+  padding: 1rem;
+  width: 50%;
+
+  @media screen and (max-width:960px) {
+    
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}

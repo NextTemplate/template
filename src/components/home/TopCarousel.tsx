@@ -26,7 +26,7 @@ const TopCarousel = () => {
               height={1250}
             />
           </div>
-          <Link href={`/gallery`} passHref>
+          <Link href={`/about`} passHref>
             <p className={styles.carouselInfo}>View More</p>
           </Link>
         </div>

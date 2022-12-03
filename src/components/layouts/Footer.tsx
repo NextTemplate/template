@@ -51,16 +51,6 @@ export default function Footer() {
             </Link>
           </ul> */}
         </div>
-        <div className={styles.footerBrock}>
-          <Link href={"/vision"} passHref>
-            <p className={styles.footerTitle}>Vision</p>
-          </Link>
-          {/* <ul className={styles.footerUl}>
-            <Link href={"/vision"} passHref>
-              <li>大切にしたいこと</li>
-            </Link>
-          </ul> */}
-        </div>
       </div>
       {/* <div className={styles.rules}>
         <p className={styles.footerTitle}>Webサイトのご利用について</p>

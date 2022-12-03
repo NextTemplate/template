@@ -1,9 +1,15 @@
 import Link from "next/link";
+import "lightbox-react/style.css";
+import Lightbox from "lightbox-react";
 import Image from "next/legacy/image";
-import Button from "../../components/layouts/Button";
+import React, { useState } from "react";
 import styles from "../../styles/Service/Service.module.scss";
 
 const Customer: React.FC = () => {
+  const title = ["スキルセット"];
+  const images = ["/media/SkillSet_02.png"];
+  const [photoIndex, setIndex] = useState(0);
+  const [isOpen, setisOpen] = useState(false);
   return (
     <>
       <div id="Customer">
@@ -27,18 +33,24 @@ const Customer: React.FC = () => {
                 <tr>
                   <th className={styles.tableTh}>スキルセット</th>
                   <td className={styles.tableTd}>
-                    <Image
-                      alt="SkillSet"
-                      className=""
-                      height={1000}
-                      objectFit="contain"
-                      src="/media/SkillSet_02.png"
-                      width={1000}
-                    />
+                    {images.map((image, index) => (
+                      <Image
+                        alt="SkillSet"
+                        className=""
+                        height={1000}
+                        key={index}
+                        objectFit="contain"
+                        onClick={() => {
+                          setisOpen(true), setIndex(index);
+                        }}
+                        src={image}
+                        width={1000}
+                      />
+                    ))}
                   </td>
                 </tr>
                 <tr>
-                  <th className={styles.tableTh}>来歴</th>
+                  <th className={styles.tableTh}>概要</th>
                   <td className={styles.tableTd}>
                     <ul className={styles.textLeft}>
                       <li>
@@ -67,9 +79,20 @@ const Customer: React.FC = () => {
             </table>
           </div>
         </>
-        <Link href={"/"}>
-          <Button props={"戻る"} />
-        </Link>
+        {isOpen && (
+          <Lightbox
+            mainSrc={`${images[photoIndex]}`}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => setisOpen(false)}
+            onMovePrevRequest={() =>
+              setIndex((photoIndex + images.length - 1) % images.length)
+            }
+            onMoveNextRequest={() => setIndex((photoIndex + 1) % images.length)}
+            imageTitle={title[photoIndex]}
+            imageCaption={title[photoIndex]}
+          />
+        )}
       </div>
     </>
   );

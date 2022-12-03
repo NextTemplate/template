@@ -27,7 +27,7 @@
 }
 .area {
   // border: dotted 1px blue;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   height: auto;
   width: 100%;
 
@@ -86,6 +86,7 @@
   width: 30%;
 }
 .tableTd {
+  background-color: #fafafa;
   border: solid 1px #ccc;
   height: auto;
   text-align: center;
@@ -119,7 +120,7 @@
   width: 30%;
 
   &:hover {
-    color: #0000ee;
+    color: aqua;
     background-color: #333333;
   }
   @media (max-width: 960px) {

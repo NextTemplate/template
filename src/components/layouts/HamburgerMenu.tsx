@@ -39,11 +39,6 @@ export default function HamburgerMenu() {
                 Gallery
               </Link>
             </li>
-            <li>
-              <Link href="/vision" passHref>
-                Vision
-              </Link>
-            </li>
           </ul>
         </nav>
         <div className={styles.container}>
@@ -80,12 +75,6 @@ export default function HamburgerMenu() {
             <Link href="/gallery" passHref>
               <p className={styles.mainTitle}>Gallery</p>
               <p className={styles.subTitle}>作品一覧</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/philosophy" passHref>
-              <p className={styles.mainTitle}>Vision</p>
-              <p className={styles.subTitle}>目指す姿</p>
             </Link>
           </li>
         </ul>
