@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/brainhubeu__react-carousel": "^2.0.5",
     "@types/google-map-react": "^2.1.7",
+    "@types/react-burger-menu": "^2.8.3",
     "eslint-plugin-prettier": "^4.0.0",
     "google-map-react": "^2.2.0",
     "leaflet": "^1.8.0",
@@ -25,6 +26,7 @@
     "nextjs-progressbar": "^0.0.14",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.0.1",
     "react-loader-spinner": "^5.1.5",

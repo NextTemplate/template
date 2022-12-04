@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
 import SEO from "../components/layouts/SEO";
+import Button from "../components/layouts/Button";
 import styles from "../styles/Stylist/Detail.module.scss";
 
 export default function Custom404() {
@@ -33,13 +34,10 @@ export default function Custom404() {
             height={1250}
           />
         </div>
-        <div className={styles.next}>
-          <Link href={"/"} passHref>
-            <div className={styles.nextInner}>
-              <span className={styles.nextInnerIn}>Topに戻る</span>
-            </div>
-          </Link>
-        </div>
+
+        <Link href={"/gallery"} passHref>
+          <Button props={"to Top"} />
+        </Link>
       </main>
     </>
   );

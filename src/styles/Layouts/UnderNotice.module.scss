@@ -1,13 +1,12 @@
 $bgColor : #eeeeee;
 
-.underNotice {
+.notice {
   display: none;
 
   @media screen and (max-width:960px) {
-    background-color: $bgColor;
     color: #fafafa;
     display: block;
-    opacity: 0.9;
+    padding-bottom: 6rem;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -16,27 +15,24 @@ $bgColor : #eeeeee;
     z-index: 3;
   }
 }
-.underNoticeButton {
+.iconButton {
   display: none;
 
   &:hover {
-    color: #0000ee;
+    color: aqua;
     opacity: 0.8;
   }
 
   @media screen and (max-width:960px) {
-    background-color: $bgColor;
-    border: none;
-    color: #333333;
     display: block;
-    font-weight: bold;
-    height: auto;
-    margin-top: 1.2rem;
-    opacity: 0.8;
-    width: 100%;
+    margin: 0 auto;
   }
 }
-.flex {
+.flexA {
+  display: flex;
+  justify-content: space-around;
+}
+.flexE {
   display: flex;
   justify-content: space-evenly;
 }
@@ -69,4 +65,201 @@ $bgColor : #eeeeee;
   35% {
     transform: skew(0.3deg, 0.3deg);
   }
+}
+.box {
+  padding-top: 3rem;
+}
+.inner {
+  left: -30px;
+  position: relative;
+}
+.innerMain_00 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+.innerMain_01 {
+  background-image: url("/main_logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  bottom: 1rem;
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_02 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  color: #f8cd8a;
+  font-size: 10px;
+  font-weight: bold;
+  height: auto;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_03 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+.innerMain_04 {
+  background-image: url("/media/gear_00.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  bottom: 1rem;
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_05 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  color: #f8cd8a;
+  font-size: 10px;
+  font-weight: bold;
+  height: auto;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_06 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+.innerMain_07 {
+  background-image: url("/media/gear_01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  bottom: 1rem;
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_08 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  color: #f8cd8a;
+  font-size: 10px;
+  font-weight: bold;
+  height: auto;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_09 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+.innerMain_10 {
+  background-image: url("/media/gear_02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  bottom: 1rem;
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_11 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  color: #f8cd8a;
+  font-size: 10px;
+  font-weight: bold;
+  height: auto;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_12 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+.innerMain_13 {
+  background-image: url("/media/gear_03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  bottom: 1rem;
+  font-weight: bold;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+.innerMain_14 {
+  background-color: #cb6e2d;
+  border: solid 4px #fdcb50;
+  border-radius: 250px;
+  bottom: 0;
+  color: #f8cd8a;
+  font-size: 10px;
+  font-weight: bold;
+  height: auto;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  width: 60px;
+  z-index: 2;
 }
