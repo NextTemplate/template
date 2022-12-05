@@ -35,7 +35,7 @@ export default function Custom404() {
           />
         </div>
 
-        <Link href={"/gallery"} passHref>
+        <Link href={"/"} passHref>
           <Button props={"to Top"} />
         </Link>
       </main>
