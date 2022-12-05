@@ -1,231 +1,85 @@
-.header {
+/* バーガーボタンの位置とサイズ */
+.burgerButton {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* バーガボタンのバーのスタイル */
+.burgerBars {
+  background: #373a47;
+}
+
+/* バーガーボタンのホバー */
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* クロスボタンの位置とサイズ */
+.crossButton {
+  right: 1rem;
+  top: 1rem;
+}
+
+/* クロスボタンのカラー・形状 */
+.cross {
+
+}
+
+/*
+サイドバーのラッパースタイル - アニメーションが壊れる可能性があるため触るときは注意
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* サイドバーのスタイル */
+.burgerMenu {
+  background: #373a47;
+  font-size: 1rem;
+}
+
+/* bubbleやelasticで必要なモーフの形状 */
+.morphShape {
+  fill: #373a47;
+}
+
+/* メニューリストのラッパースタイル*/
+.itemList {
+  color: #b8b7ad;
+  margin: 0 auto;
+}
+
+/* 個々のリストのスタイル */
+.items {
   align-items: center;
-  background-color: #fafafa;
-  display: flex;
-  height: auto;
-  opacity: 0.8;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
+  display: inline-block;
+  list-style: none;
+  margin: 5rem 0 0 5rem;
   width: 100%;
-  z-index: 10;
 
-  nav {
-    margin-left: auto;
-
-    @media (max-width: 680px) {
-      display: none;
-    }
+  @media (max-width: 960px) {
+    margin: 5rem 0 0 3rem;
   }
-  li {
-    display: inline-block;
-    margin-right: 15px;
 
-    &:nth-child(7) {
-      background-color: #333333;
-      color: white;
-      opacity: 0.8;
-      padding: 5px 10px;
-      margin-right: 0;
-      text-align: center;
-    }
-  }
-}
-
-@media (max-width: 520px) {
-  .header {
-    position: initial;
-    nav {
-      display: none;
-    }
-  }
-}
-.navPC {
   @media (max-width: 520px) {
-    display: none;
+    
   }
 }
-.humburger {
-  background-color: rgb(34, 35, 36);
-  
-  color: white;
-  padding: 1rem 0.4rem 0 0.4rem;
-  display: none;
-  cursor: pointer;
-  position: sticky;
-  top: 20px;
-  right: 40px;
-  
-  span {
-    background-color: white;
-    width: 30px;
-    height: 1px;
-    display: block;
-    margin-bottom: 7px;
-    &:nth-child(1) {
-      width: 20px;
-      margin-left: 10px;
-    }
-  }
-  p {
-    font-size: 13px;
-    margin-top: -4px;
-    margin-bottom: 5px;
-  }
+.itemsBrock {
+  margin-bottom: 3rem;
 }
-.drawerMenu {
-  width: 0;
-  color: white;
-  background-color: rgb(34, 35, 36);
-
-  transition: 0.5s;
-  height: 0;
-  opacity: 0;
-  z-index: -100;
-  &.open {
-    height: 100vh;
-    opacity: 0.9;
-    z-index: 100;
-  }
+.itemsTitle {
+  font-size: 24px;
+  font-weight: bold;
 }
-
-@media (max-width: 960px) {
-  .header {
-    position: sticky;
-    top: 0;
-    background: #fafafa;
-    opacity: 0.8;
-    .logo {
-      margin: 1rem 0 ;
-    }
-  }
-  .container {
-    margin: 0 0 0 auto;
-    .humburger {
-      display: none;
-
-      @media (max-width: 680px) {
-        display: block;
-      }
-    }
-  }
-  .drawerMenu {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    ul {
-      width: 90%;
-      margin: 0 auto;
-      li {
-        margin-bottom: 25px;
-        opacity: 0.8;
-        padding: 0 1rem 0 1rem;
-        font-family: "Josefin Sans", sans-serif;
-        font-weight: 200;
-      }
-    }
-    @media (max-width: 680px) {
-      position: fixed;
-    }
-  }
-  .drawerMenuLi2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 200;
-    margin-bottom: 25px;
-    opacity: 0.8;
-    padding: 1rem;
-  }
-  .mobileLogo {
-    width: 250px;
-    height: 80px;
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-  }
-  .mainTitle {
-    font-size: 28px;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-  }
-  .subTitle {
-    font-size: 15px;
-  }
-  .close {
-    cursor: pointer;
-    margin-top: 1.6rem;
-    padding: 1rem;
-    span {
-      background-color: #fafafa;
-      width: 30px;
-      height: 1px;
-      display: block;
-      margin-bottom: 10px;
-      margin: 0 0 10px auto;
-      &:first-child {
-        transform: translateY(6px) rotate(150deg);
-      }
-      &:nth-child(2) {
-        transform: translateY(-6px) rotate(-150deg);
-        margin-bottom: 0;
-      }
-    }
-    p {
-      text-align: right;
-      font-size: 11px;
-      padding-right: 1px;
-    }
-  }
+.itemsSubTitle {
+  font-size: 16px;
 }
-@media (max-width: 600px) {
-  .header {
-    padding: 0 20px;
-  }
-  .humburger {
-    top: 15px;
-    right: 20px;
-  }
-  .mobileLogo {
-    width: 190px;
-    height: 60px;
-    top: 10px;
-  }
-}
-@media (max-width: 340px) {
-  .header {
-    padding: 0 10px;
-    .logo {
-      width: 170px;
-      height: 60px;
-    }
-  }
-}
-.poyoyon {
-  animation: poyoyon 4.0s infinite;
-  opacity: 1;
-}
-@keyframes poyoyon {
-  0%, 40% {
-    transform: skew(0deg, 0deg);
-  }
-  5% {
-    transform: skew(5deg, 5deg);
-  }
-  10% {
-    transform: skew(-4deg, -4deg);
-  }
-  15% {
-    transform: skew(3deg, 3deg);
-  }
-  20% {
-    transform: skew(-2deg, -2deg);
-  }
-  25% {
-    transform: skew(1deg, 1deg);
-  }
-  30% {
-    transform: skew(-0.6deg, -0.6deg);
-  }
-  35% {
-    transform: skew(0.3deg, 0.3deg);
-  }
+/* オーバーレイ(overlay)のスタイリング */
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

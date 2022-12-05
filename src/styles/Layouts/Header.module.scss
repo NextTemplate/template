@@ -1,17 +1,46 @@
-// z-indexは最大値100から下げていく
-.mainHeader {
-    background: rgba(255,255,255,0.8);
-    position: sticky;
-    transition: all .5s;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+.flexA {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
-.mainHeaderInner {
-    display: flex;
-    justify-content: space-between;
+.flexB {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  margin: 0 0 0 auto;
+  padding-right: 1rem;
+  width: 40%;
+
+  @media (max-width: 960px) {
+    width: 60%;
+  }
+
+  @media (max-width: 520px) {
+    width: 70%;
+  }
 }
-.mainNav {
-    display: flex;
-    justify-content: space-evenly;
+.flexE {
+  align-items: center;
+  display: flex;
+  margin: 0 0 0 auto;
+  justify-content: space-evenly;
+  height: 3rem;
+  width: 40%;
+}
+.flexR {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header {
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.news {
+  margin-top: 2rem;
+}
+.logo {
+  margin-top: 2rem;
 }

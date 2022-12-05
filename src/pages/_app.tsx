@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import NextNprogress from "nextjs-progressbar";
 import Footer from "../components/layouts/Footer";
-import HamburgerMenu from "../components/layouts/HamburgerMenu";
+import HeaderMenu from "../components/layouts/Header";
+import HamburgeMenu from "../components/layouts/HamburgerMenu";
 
 import Script from "next/script";
 import * as gtag from "../lib/gtag";
@@ -48,7 +49,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         height={4}
         showOnShallow={true}
       />
-      <HamburgerMenu />
+      <HamburgeMenu />
+      <HeaderMenu />
       <Component {...pageProps} />
       <Footer />
     </>

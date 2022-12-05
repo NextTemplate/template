@@ -15,7 +15,7 @@ $bgColor : #eeeeee;
 }
 // プルプル動く
 .purupuru {
-  animation: purupuru 1.0s ease-in-out alternate infinite;
+  animation: purupuru 2.0s ease-in-out alternate infinite;
 }
 @keyframes purupuru {
   0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
@@ -140,7 +140,7 @@ $bgColor : #eeeeee;
 }
 .innerMain_00 {
   background-color: #cb6e2d;
-  border: solid 4px #fdcb50;
+  border: solid 4px #cbaf82;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));

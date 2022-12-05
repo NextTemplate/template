@@ -1,84 +1,83 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/legacy/image";
-import React, { useState } from "react";
 import styles from "../../styles/Layouts/HamburgerMenu.module.scss";
+import { scaleRotate as Menu } from "react-burger-menu";
 
-export default function HamburgerMenu() {
-  const [openMenu, setOpenMenu] = useState(false);
-  const menuFunction = () => {
-    setOpenMenu(!openMenu);
+const HamburgerMenu: React.FC = () => {
+  let isMenuOpen = (state: any) => {
+    return state.isOpen;
   };
   return (
     <>
-      <header id="header" className={styles.header}>
-        <div className={styles.logo}>
-          <Link href={"/"} passHref>
-            <Image
-              className={styles.navImage}
-              src={"/main_logo.png"}
-              alt="MainLogo"
-              width={56}
-              height={56}
-            />
-          </Link>
-        </div>
-        <nav className={styles.navPC}>
-          <ul>
-            <li>
+      <Menu
+        customBurgerIcon={
+          <Image
+            src="/media/gear_00.png"
+            alt=""
+            height={100}
+            width={100}
+            objectFit={"contain"}
+          />
+        }
+        customCrossIcon={
+          <Image
+            src="/media/gear_04.png"
+            alt=""
+            height={100}
+            width={100}
+            objectFit={"contain"}
+          />
+        }
+        burgerButtonClassName={styles.burgerButton}
+        burgerBarClassName={styles.burgerBars}
+        crossButtonClassName={styles.crossButton}
+        crossClassName={styles.cross}
+        menuClassName={styles.burgerMenu}
+        morphShapeClassName={styles.morphShape}
+        itemListClassName={styles.itemList}
+        overlayClassName={styles.overlay}
+        onStateChange={isMenuOpen}
+        pageWrapId={"page-wrap"}
+        width={"50%"}
+      >
+        <div id="page-wrap">
+          <ul className={styles.items}>
+            <li className={styles.itemsBrock}>
               <Link href="/" passHref>
-                Home
+                <p className={styles.itemsTitle}>Home</p>
+                <p className={styles.itemsSubTitle}>ホーム</p>
               </Link>
             </li>
-            <li>
+            <li className={styles.itemsBrock}>
               <Link href="/about" passHref>
-                About
+                <p className={styles.itemsTitle}>About</p>
+                <p className={styles.itemsSubTitle}>私について</p>
               </Link>
             </li>
-            <li>
+            <li className={styles.itemsBrock}>
               <Link href="/gallery" passHref>
-                Gallery
+                <p className={styles.itemsTitle}>Gallery</p>
+                <p className={styles.itemsSubTitle}>作品一覧</p>
+              </Link>
+            </li>
+            <li className={styles.itemsBrock}>
+              <Link href="/gallery" passHref>
+                <p className={styles.itemsTitle}>Vision</p>
+                <p className={styles.itemsSubTitle}>目指す方向</p>
+              </Link>
+            </li>
+            <li className={styles.itemsBrock}>
+              <Link href="/gallery" passHref>
+                <p className={styles.itemsTitle}>Contact</p>
+                <p className={styles.itemsSubTitle}>コンタクト</p>
               </Link>
             </li>
           </ul>
-        </nav>
-        <div className={styles.container}>
-          <div className={styles.humburger} onClick={() => menuFunction()}>
-            <span className={openMenu ? styles.open : undefined}></span>
-            <span className={openMenu ? styles.open : undefined}></span>
-            <p className={openMenu ? styles.open : undefined}>Menu</p>
-          </div>
         </div>
-      </header>
-      <div
-        className={`${styles.drawerMenu}
-        ${openMenu ? styles.open : undefined}`}
-      >
-        <ul>
-          <div className={styles.close} onClick={() => menuFunction()}>
-            <span></span>
-            <span></span>
-            <p>Close</p>
-          </div>
-          <li>
-            <Link href="/" passHref>
-              <p className={styles.mainTitle}>Home</p>
-              <p className={styles.subTitle}>ホーム</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" passHref>
-              <p className={styles.mainTitle}>About</p>
-              <p className={styles.subTitle}>私について</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/gallery" passHref>
-              <p className={styles.mainTitle}>Gallery</p>
-              <p className={styles.subTitle}>作品一覧</p>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      </Menu>
     </>
   );
-}
+};
+
+export default HamburgerMenu;
