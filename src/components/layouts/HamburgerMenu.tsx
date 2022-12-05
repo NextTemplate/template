@@ -62,13 +62,13 @@ const HamburgerMenu: React.FC = () => {
               </Link>
             </li>
             <li className={styles.itemsBrock}>
-              <Link href="/gallery" passHref>
+              <Link href="/vision" passHref>
                 <p className={styles.itemsTitle}>Vision</p>
                 <p className={styles.itemsSubTitle}>目指す方向</p>
               </Link>
             </li>
             <li className={styles.itemsBrock}>
-              <Link href="/gallery" passHref>
+              <Link href="/contact" passHref>
                 <p className={styles.itemsTitle}>Contact</p>
                 <p className={styles.itemsSubTitle}>コンタクト</p>
               </Link>
