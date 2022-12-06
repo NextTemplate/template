@@ -1,6 +1,13 @@
-$bgColor : #f7f7f7;
+// 基本配色
+$bgColor : #f8f8f8;
 $borderColor : #c0c0c0;
 $fontColor : #333333;
+// front
+$frontBgColor :  #f8f8f8;
+$frontBorderColor : #c0c0c0;
+// back side
+$backBgColor : #f4f4f4;
+$backBorderColor : #a9a9a9;
 
 // 縦に戻るアニメーション
 .puyon {
@@ -140,9 +147,10 @@ $fontColor : #333333;
   left: -30px;
   position: relative;
 }
+// back side
 .innerMain_00 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $backBgColor;
+  border: solid 4px $backBorderColor;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
@@ -164,9 +172,10 @@ $fontColor : #333333;
   width: 60px;
   z-index: 2;
 }
+// front
 .innerMain_02 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $frontBgColor;
+  border: solid 4px $frontBorderColor;
   border-radius: 250px;
   bottom: 0;
   color: $fontColor;
@@ -179,8 +188,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_03 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $backBgColor;
+  border: solid 4px $backBorderColor;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
@@ -203,8 +212,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_05 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $frontBgColor;
+  border: solid 4px $frontBorderColor;
   border-radius: 250px;
   bottom: 0;
   color: $fontColor;
@@ -217,8 +226,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_06 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $backBgColor;
+  border: solid 4px $backBorderColor;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
@@ -240,8 +249,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_08 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $frontBgColor;
+  border: solid 4px $frontBorderColor;
   border-radius: 250px;
   bottom: 0;
   color: $fontColor;
@@ -254,8 +263,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_09 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $backBgColor;
+  border: solid 4px $backBorderColor;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
@@ -278,8 +287,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_11 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $frontBgColor;
+  border: solid 4px $frontBorderColor;
   border-radius: 250px;
   bottom: 0;
   color: $fontColor;
@@ -292,8 +301,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_12 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $backBgColor;
+  border: solid 4px $backBorderColor;
   border-radius: 250px;
   bottom: 0;
   filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
@@ -316,8 +325,8 @@ $fontColor : #333333;
   z-index: 2;
 }
 .innerMain_14 {
-  background-color: $bgColor;
-  border: solid 4px $borderColor;
+  background-color: $frontBgColor;
+  border: solid 4px $frontBorderColor;
   border-radius: 250px;
   bottom: 0;
   color: $fontColor;
