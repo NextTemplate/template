@@ -11,7 +11,6 @@ export default function Footer() {
   const vision = data.vision;
   return (
     <footer className={`${styles.mainFooter} ${styles.animeBody}`}>
-      <ToTopButton />
       <UnderNotice />
       <div className={styles.footerContents}>
         <div className={styles.footerBrock}>
@@ -29,14 +28,6 @@ export default function Footer() {
           <Link href={"/about"} passHref>
             <p className={styles.footerTitle}>About</p>
           </Link>
-          {/* <ul className={styles.footerUl}>
-            <Link href={"/about"} passHref>
-              <li>リンク</li>
-            </Link>
-            <Link href={"/about"} passHref>
-              <li>リンク</li>
-            </Link>
-          </ul> */}
         </div>
         <div className={styles.footerBrock}>
           <Link href={"/gallery"} passHref>

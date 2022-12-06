@@ -1,8 +1,12 @@
+$bgColor : #f7f7f7;
+$borderColor : #c0c0c0;
+$fontColor : #333333;
+
 /* バーガーボタンの位置とサイズ */
 .burgerButton {
   position: fixed;
-  width: 3rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: 2.8rem;
   top: 1rem;
   left: 1rem;
 }
@@ -38,7 +42,7 @@
 
 /* サイドバーのスタイル */
 .burgerMenu {
-  background: #373a47;
+  background: $bgColor;
   font-size: 1rem;
 }
 
@@ -58,11 +62,10 @@
   align-items: center;
   display: inline-block;
   list-style: none;
-  margin: 5rem 0 0 5rem;
   width: 100%;
 
   @media (max-width: 960px) {
-    margin: 5rem 0 0 3rem;
+    margin: 5rem auto;
   }
 
   @media (max-width: 520px) {
@@ -70,16 +73,84 @@
   }
 }
 .itemsBrock {
-  margin-bottom: 3rem;
+  margin: 5rem auto;
+  width: 50%;
+
+  @media (max-width: 960px) {
+    margin: 3rem auto;
+  }
+  @media (max-width: 520px) {
+    
+  }
 }
 .itemsTitle {
+  color: $fontColor;
   font-size: 24px;
   font-weight: bold;
 }
 .itemsSubTitle {
+  color: $fontColor;
   font-size: 16px;
 }
 /* オーバーレイ(overlay)のスタイリング */
 .overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+// 開くボタンのcss
+.openButton {
+  background: $bgColor;
+  border: solid 4px $borderColor;
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+}
+.line_00 {
+  background-color: $fontColor;
+  border-radius: 8px;
+  display: block;
+  height: 4px;
+  margin: 0.4rem 0 0 0.2rem;
+  width: 16px;
+}
+.line_01 {
+  background-color: $fontColor;
+  border-radius: 8px;
+  display: block;
+  height: 4px;
+  margin: 0.4rem 0 0 0.2rem;
+  width: 24px;
+}
+.line_02 {
+  background-color: $fontColor;
+  border-radius: 8px;
+  display: block;
+  height: 4px;
+  margin: 0.4rem 0 0 0.2rem;
+  width: 32px;
+}
+// 閉じるボタンのcss
+.closeButton {
+  display: block;
+  position: relative;
+  height: 30px;
+  margin-right: 1rem;
+  width: 30px;
+
+  &::before, &::after {
+    background: $fontColor;
+    border-radius: 8px;
+    content: "";
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+  }
+
+  &::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
 }

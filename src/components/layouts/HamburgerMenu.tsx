@@ -12,22 +12,23 @@ const HamburgerMenu: React.FC = () => {
     <>
       <Menu
         customBurgerIcon={
-          <Image
-            src="/media/gear_00.png"
-            alt=""
-            height={100}
-            width={100}
-            objectFit={"contain"}
-          />
+          <div className={styles.openButton}>
+            <span className={styles.line_00}></span>
+            <span className={styles.line_01}></span>
+            <span className={styles.line_02}></span>
+          </div>
         }
         customCrossIcon={
-          <Image
-            src="/media/gear_04.png"
-            alt=""
-            height={100}
-            width={100}
-            objectFit={"contain"}
-          />
+          <div>
+            <span className={styles.closeButton}></span>
+          </div>
+          // <Image
+          //   src="/media/gear_04.png"
+          //   alt=""
+          //   height={100}
+          //   width={100}
+          //   objectFit={"contain"}
+          // />
         }
         burgerButtonClassName={styles.burgerButton}
         burgerBarClassName={styles.burgerBars}
@@ -39,7 +40,7 @@ const HamburgerMenu: React.FC = () => {
         overlayClassName={styles.overlay}
         onStateChange={isMenuOpen}
         pageWrapId={"page-wrap"}
-        width={"50%"}
+        width={"70%"}
       >
         <div id="page-wrap">
           <ul className={styles.items}>

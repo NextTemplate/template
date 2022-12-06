@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
+import ToTopButton from "./ToTopButton";
 import styles from "../../styles/Layouts/UnderNotice.module.scss";
 
 export default function UnderNotice() {
