@@ -4,7 +4,7 @@
     color: aqua;
   }
   100% {
-    color: #eeeeee;
+    color: #c0c0c0;
   }
 }
 @keyframes blinkBorder {
@@ -12,7 +12,7 @@
     border: 8px solid aqua;
   }
   100% {
-    border: 8px solid #eeeeee;
+    border: 8px solid rgba(255, 0, 0, 0);;
   }
 }
 .btn {
@@ -49,7 +49,7 @@
 // ボタンを選択した時に現在値をインタラクティブに視認させる
 .btnBlink {
   align-items: center;
-  border: solid 8px #fafafa;
+  border: solid 8px rgba(255, 0, 0, 0);
   border-radius: 16px;
   margin: 2rem auto;
   height: auto;
