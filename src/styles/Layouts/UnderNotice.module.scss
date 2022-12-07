@@ -160,6 +160,7 @@ $backBorderColor : #a9a9a9;
   width: 60px;
   z-index: 1;
 }
+// 動かしたい本体
 .innerMain_01 {
   background-image: url("/main_logo.png");
   background-repeat: no-repeat;
@@ -171,6 +172,9 @@ $backBorderColor : #a9a9a9;
   position: absolute;
   width: 60px;
   z-index: 2;
+  &:hover {
+    animation: puyon 3.0s ease-in-out alternate infinite;
+  }
 }
 // front
 .innerMain_02 {
@@ -210,6 +214,10 @@ $backBorderColor : #a9a9a9;
   position: absolute;
   width: 60px;
   z-index: 2;
+
+  &:hover {
+    animation: purupuru 2.0s ease-in-out alternate infinite;
+  }
 }
 .innerMain_05 {
   background-color: $frontBgColor;
@@ -247,6 +255,10 @@ $backBorderColor : #a9a9a9;
   position: absolute;
   width: 60px;
   z-index: 2;
+
+  &:hover {
+    animation: pururun 5.0s ease-in-out alternate infinite;
+  }
 }
 .innerMain_08 {
   background-color: $frontBgColor;
@@ -285,6 +297,10 @@ $backBorderColor : #a9a9a9;
   position: absolute;
   width: 60px;
   z-index: 2;
+
+  &:hover {
+    animation: purun 2.0s ease-in-out alternate infinite;
+  }
 }
 .innerMain_11 {
   background-color: $frontBgColor;
@@ -323,6 +339,10 @@ $backBorderColor : #a9a9a9;
   position: absolute;
   width: 60px;
   z-index: 2;
+
+  &:hover {
+    animation: poyooon 4.0s ease-in-out alternate infinite;
+  }
 }
 .innerMain_14 {
   background-color: $frontBgColor;
