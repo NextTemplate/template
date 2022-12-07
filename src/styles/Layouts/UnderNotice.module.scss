@@ -90,6 +90,8 @@ $backBorderColor : #a9a9a9;
   }
 }
 .iconButton {
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
   display: none;
 
   &:hover {
