@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
+import Button from "../../components/layouts/Button";
 import { Carousel } from "react-responsive-carousel";
 import styles from "../../styles/Layouts/Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -27,7 +28,9 @@ const TopCarousel = () => {
             />
           </div>
           <Link href={`/about`} passHref>
-            <p className={styles.carouselInfo}>View More</p>
+            <div className={styles.carouselInfo}>
+              <Button props={"View More"} />
+            </div>
           </Link>
         </div>
         <div>
@@ -41,23 +44,11 @@ const TopCarousel = () => {
             />
           </div>
           <Link href={`/gallery`} passHref>
-            <p className={styles.carouselInfo}>View More</p>
+            <div className={styles.carouselInfo}>
+              <Button props={"View More"} />
+            </div>
           </Link>
         </div>
-        {/* <div>
-          <div className={`${styles.zoom} ${styles.zoom1}`}>
-            <Image
-              className={`${styles.carousel} ${styles.zoomImage2}`}
-              src={images[2]}
-              alt={"実績紹介"}
-              width={2000}
-              height={1250}
-            />
-          </div>
-          <Link href={`/gallery`} passHref>
-            <p className={styles.carouselInfo}>View More</p>
-          </Link>
-        </div> */}
       </Carousel>
     </>
   );

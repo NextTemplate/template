@@ -16,6 +16,7 @@
   }
 }
 .btn {
+  align-items: center;
   background: #eeeeee;
   background-image: url("/media/basis_00.png");
   background-size: cover;
@@ -34,16 +35,20 @@
   text-align: center;
   width: 100%;
 
+  &:hover {
+    animation: blinkFont 1s ease infinite alternate;
+  }
   @media (max-width: 960px) {
     font-size: 16px;
     text-align: center;
   }
-  &:hover {
-    animation: blinkFont 1s ease infinite alternate;
+  @media (max-width: 960px) {
+    padding: 1rem;
   }
 }
 // ボタンを選択した時に現在値をインタラクティブに視認させる
 .btnBlink {
+  align-items: center;
   border: solid 8px #fafafa;
   border-radius: 16px;
   margin: 2rem auto;
