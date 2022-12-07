@@ -37,7 +37,11 @@ export default function UnderNotice() {
                   <li className={styles.innerMain_06}>&nbsp;</li>
                   <li className={styles.innerMain_07}>&nbsp;</li>
                   <li className={styles.innerMain_08}>Gallery</li>
-                  <li className={`${styles.innerMain_08_01} ${styles.korokoro}`}>&nbsp;</li>
+                  <li
+                    className={`${styles.innerMain_08_01} ${styles.korokoro}`}
+                  >
+                    &nbsp;
+                  </li>
                 </ul>
               </button>
             </Link>
