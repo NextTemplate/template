@@ -6,6 +6,7 @@ import { client } from "../../libs/client";
 import SEO from "../../components/layouts/SEO";
 import type { Article } from "../../types/article";
 import styles from "../../styles/Stylist/Detail.module.scss";
+import Button from "../../components/layouts/Button";
 
 type Props = {
   article: Article;
@@ -56,13 +57,9 @@ export default function Article({ article }: Props) {
           </div>
         </div>
         <div className={styles.margin3rem}>
-          <div className={styles.next}>
-            <Link href={"/"} passHref>
-              <div className={styles.nextInner}>
-                <span className={styles.nextInnerIn}>Topに戻る</span>
-              </div>
-            </Link>
-          </div>
+          <Link href={"/"} passHref>
+            <Button props={"to Top"} />
+          </Link>
         </div>
       </div>
     </>
