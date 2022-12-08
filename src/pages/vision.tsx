@@ -5,11 +5,11 @@ const Service: React.FC = () => {
   return (
     <>
       <SEO
-        title={""}
-        description={""}
-        keyword={""}
+        title={"Vision 〜目指す方向〜 | 野生のデザイナーのポートフォリオ"}
+        description={"Tatsuya Ozawaのポートフォリオへようこそ。"}
+        keyword={"キーワード"}
         image={"/main_logo.png"}
-        url={""}
+        url={"https://it-mee.netlify.app/vision"}
       />
       <Features />
     </>

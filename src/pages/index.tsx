@@ -3,12 +3,11 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import { client } from "../libs/client";
 import SEO from "../components/layouts/SEO";
-import Garrelys from "../components/gallerys/Gallerys";
 import styles from "../styles/Home.module.scss";
 import type { Article } from "../types/article";
-import TopCarousel from "../components/home/TopCarousel";
-import { Children } from "react";
 import Button from "../components/layouts/Button";
+import Garrelys from "../components/gallerys/Gallerys";
+import TopCarousel from "../components/home/TopCarousel";
 
 type Props = {
   articles: Array<Article>;
@@ -18,11 +17,11 @@ export default function Home({ articles }: Props) {
   return (
     <>
       <SEO
-        title={""}
-        description={""}
-        keyword={""}
+        title={"It's Me !! | 野生のデザイナーのポートフォリオ"}
+        description={"Tatsuya Ozawaのポートフォリオへようこそ。"}
+        keyword={"キーワード"}
         image={"/main_logo.png"}
-        url={""}
+        url={"https://it-mee.netlify.app/"}
       />
       <div className={styles.mainHome}>
         <TopCarousel />
