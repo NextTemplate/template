@@ -17,7 +17,7 @@ export default function Custom404() {
       <main className={styles.detailArea}>
         <div className={styles.detail404Text}>
           <div>
-            <h2 className={styles.detailSubTitle}>ページが見つかりません</h2>
+            <h2 className={styles.detailSubTitle}>ページが見つかりません。</h2>
           </div>
           <div>
             <p className={styles.detailSubTitle}>
