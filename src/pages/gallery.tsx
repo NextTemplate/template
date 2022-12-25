@@ -9,17 +9,18 @@ import styles from "../styles/Gallery/NewGallery.module.scss";
 
 type Props = {
   gallerys: Array<Gallery>;
+  totalCount: number;
 };
 
 const Gallery = ({ gallerys }: Props) => {
   return (
     <>
       <SEO
-        title={""}
-        description={""}
-        keyword={""}
+        title={"Gallery 〜作品集〜 | 野生のデザイナーのポートフォリオ"}
+        description={"Tatsuya Ozawaのポートフォリオへようこそ。"}
+        keyword={"キーワード"}
         image={"/main_logo.png"}
-        url={""}
+        url={"https://it-mee.netlify.app/gallery"}
       />
       <div className={styles.mainHome}>
         <div className={styles.stylistArea}>

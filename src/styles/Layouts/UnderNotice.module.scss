@@ -76,7 +76,7 @@ $backBorderColor : #a9a9a9;
 }
 // 横にコロコロ動く
 .korokoro {
-  animation: korokoro 2.5s ease-in-out alternate infinite;
+  animation: korokoro 4s ease-in-out alternate infinite;
 }
 @keyframes korokoro {
   0%   { transform: translate(0%, 0%); }
