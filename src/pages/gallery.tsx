@@ -9,9 +9,10 @@ import styles from "../styles/Gallery/NewGallery.module.scss";
 
 type Props = {
   gallerys: Array<Gallery>;
+  totalCount: number;
 };
 
-const Gallery = ({ gallerys }: Props) => {
+const Gallery = ({ gallerys, totalCount }: Props) => {
   return (
     <>
       <SEO
@@ -93,6 +94,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       gallerys: data.contents,
+      totalCount: data.totalCount,
     },
   };
 };

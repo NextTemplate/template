@@ -33,4 +33,5 @@ export type Gallery = {
   };
   description: string;
   keyword: string;
+  totalCount: number;
 };
