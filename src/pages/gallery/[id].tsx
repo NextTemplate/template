@@ -12,7 +12,7 @@ type Props = {
   gallery: Gallery;
 };
 
-const Gallery = ({ gallery }: Props) => {
+export default function Gallery({ gallery }: Props) {
   const galleryIds: number[] = [gallery.gallery_id];
   return (
     <>
@@ -148,5 +148,3 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     },
   };
 };
-
-export default Gallery;
