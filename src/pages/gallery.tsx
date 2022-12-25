@@ -12,7 +12,7 @@ type Props = {
   totalCount: number;
 };
 
-const Gallery = ({ gallerys, totalCount }: Props) => {
+const Gallery = ({ gallerys }: Props) => {
   return (
     <>
       <SEO
@@ -94,7 +94,6 @@ export const getStaticProps = async () => {
   return {
     props: {
       gallerys: data.contents,
-      totalCount: data.totalCount,
     },
   };
 };
