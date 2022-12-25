@@ -12,7 +12,7 @@ type Props = {
   totalCount: number;
 };
 
-const Gallery = ({ gallerys }: Props) => {
+export default function Gallery({ gallerys }: Props) {
   return (
     <>
       <SEO
@@ -82,7 +82,7 @@ const Gallery = ({ gallerys }: Props) => {
       </div>
     </>
   );
-};
+}
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
@@ -97,5 +97,3 @@ export const getStaticProps = async () => {
     },
   };
 };
-
-export default Gallery;
