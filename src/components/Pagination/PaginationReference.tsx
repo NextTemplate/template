@@ -1,3 +1,4 @@
+// 参考 https://github.com/hpfull-yamucha/hpfullsite/tree/main/pages
 import Link from "next/link";
 import { PER_PAGE } from "../../settings/siteSettings";
 
