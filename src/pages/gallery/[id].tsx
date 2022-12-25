@@ -132,7 +132,7 @@ export default function Gallery({ gallery }: Props) {
       </div>
     </>
   );
-};
+}
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const gallery = ctx.params?.gallery;
