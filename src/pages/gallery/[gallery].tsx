@@ -31,12 +31,12 @@ export default function Gallery({ gallery }: Props) {
           <div className={styles.detailFlex}>
             <div className={styles.detailImage}>
               <Image
-                className=""
+                className={styles.galleryImage}
                 src={gallery.eye_catch.url}
                 alt={gallery.title + "の画像です"}
                 width={1000}
                 height={720}
-                objectFit="contain"
+                objectFit={"contain"}
               />
             </div>
             <div className={styles.detailRight}>
@@ -126,8 +126,8 @@ export default function Gallery({ gallery }: Props) {
         <p className={styles.menuDetail}>
           ※上記メニュー意外にもキャンペーン価格やセットメニューがございます。詳しい内容はスタイリストまでご連絡ください。
         </p> */}
-        <Link href={"/"} passHref>
-          <Button props={"Topに戻る"} />
+        <Link href={"/gallery"} passHref>
+          <Button props={"戻る"} />
         </Link>
       </div>
     </>
