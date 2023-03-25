@@ -22,12 +22,13 @@ const Customer: React.FC = () => {
                   <td className={styles.tableTd}>
                     <Image
                       alt="icon"
-                      className=""
+                      // className={styles.cardImageMain}
                       height={250}
                       objectFit="contain"
                       src="/media/Me_00.png"
                       width={250}
                     />
+                    <div className={styles.backSide}></div>
                   </td>
                 </tr>
                 <tr>
