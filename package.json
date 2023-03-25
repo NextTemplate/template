@@ -11,13 +11,14 @@
     "export": "next export"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.29.4",
+    "@netlify/plugin-nextjs": "^4.32.2",
     "@types/brainhubeu__react-carousel": "^2.0.5",
     "@types/google-map-react": "^2.1.7",
     "@types/react-burger-menu": "^2.8.3",
     "emailjs-com": "^3.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "google-map-react": "^2.2.0",
+    "latest": "^0.2.0",
     "leaflet": "^1.8.0",
     "lightbox-react": "^0.3.8",
     "microcms-js-sdk": "^2.0.0",
