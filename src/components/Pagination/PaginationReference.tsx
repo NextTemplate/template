@@ -1,25 +1,31 @@
-import Link from "next/link";
-import { PER_PAGE } from "../../settings/siteSettings";
+import React from "react";
+import Link from 'next/link';
 
-type Props = {
-  totalCount: number;
-};
+interface PaginationProps {
+  maxPageNumber: number;
+  currentPageNumber: number;
+}
 
-export default function Pagination({ totalCount }: Props) {
-  const range = (start: number, end: number) =>
-    [...Array(end - start + 1)].map((_, i) => start + i);
-  const pageCount = Math.ceil(totalCount / PER_PAGE);
+export const Pagination: React.FC<PaginationProps> = ({ maxPageNumber, currentPageNumber }) => {
+  currentPageNumber = Number(currentPageNumber);
+  maxPageNumber = Number(maxPageNumber);
+  const prevPage = currentPageNumber - 1;
+  const nextPage = currentPageNumber + 1;
+
   return (
     <>
-      <div>
-        {range(1, pageCount).map((number, index) => (
-          <div key={index}>
-            <Link href={`/article/${number}`} passHref>
-              <button>{number}</button>
-            </Link>
-          </div>
-        ))}
+      <div className="flex px-3 my-12">
+        {currentPageNumber !== 1 && (
+          <Link href={`/pages/gallery/${prevPage}`}>
+            <a>&lt; Previous</a>
+          </Link>
+        )}
+        {currentPageNumber !== maxPageNumber && (
+          <Link href={`/pages/gallery/${nextPage}`}>
+            <a className="ml-4">Next &gt;</a>
+          </Link>
+        )}
       </div>
     </>
   );
-}
+};

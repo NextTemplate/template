@@ -7,6 +7,7 @@ import SEO from "../../components/layouts/SEO";
 import type { Gallery } from "../../types/gallery";
 import Button from "../../components/layouts/Button";
 import styles from "../../styles/Stylist/Detail.module.scss";
+import getTotalCount from "../../libs/getTotalCount";
 
 type Props = {
   gallery: Gallery;
@@ -14,6 +15,8 @@ type Props = {
 
 export default function Gallery({ gallery }: Props) {
   const galleryIds: number[] = [gallery.gallery_id];
+  const totalCount: object = getTotalCount;
+
   return (
     <>
       <SEO
@@ -145,6 +148,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   return {
     props: {
       gallery: data,
+      totalCount: data,
     },
   };
 };
