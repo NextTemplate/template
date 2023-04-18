@@ -28,6 +28,13 @@
     width: 100%;
   }
 }
+// 次に進む、戻るボタンのスタイル
+.control-next,
+.control-prev {
+  background-color: #f00; /* 背景色を赤に設定 */
+  border-radius: 50%; /* ボタンを円形に */
+  /* その他のスタイルをここに追加 */
+}
 // zoomanimationのcss
 @keyframes animationZoom0 {
   100% { transform:scale(1.1)} 

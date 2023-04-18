@@ -8,6 +8,7 @@ import type { Article } from "../types/article";
 import Button from "../components/layouts/Button";
 import Garrelys from "../components/gallerys/Gallerys";
 import TopCarousel from "../components/home/TopCarousel";
+import MiniCarousel from "../components/home/MiniCarousel";
 
 type Props = {
   articles: Array<Article>;
@@ -70,6 +71,7 @@ export default function Home({ articles }: Props) {
         <Link href={"/gallery"} passHref>
           <Button props={"View More"} />
         </Link>
+        <MiniCarousel />
       </div>
     </>
   );

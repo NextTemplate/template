@@ -33,6 +33,7 @@
     "react-burger-menu": "^3.0.8",
     "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-leaflet": "^4.0.1",
     "react-loader-spinner": "^5.1.5",
     "react-paginate": "^8.1.3",
