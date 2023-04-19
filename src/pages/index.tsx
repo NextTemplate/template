@@ -9,14 +9,23 @@ import Button from "../components/layouts/Button";
 import Garrelys from "../components/gallerys/Gallerys";
 import TopCarousel from "../components/home/TopCarousel";
 
+import Pagination from "../components/Pagination/";
+
 import MiniCarousel from "../components/home/MiniCarousel";
 import CustomSlick from "../components/Slick/Slick";
 
 type Props = {
   articles: Array<Article>;
+  totalCount: number;
 };
 
-export default function Home({ articles }: Props) {
+// Inside Home component
+const ITEMS_PER_PAGE = 3;
+
+export default function Home({ articles, totalCount }: Props) {
+  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
+  const currentPage = 1; // Assuming the first page as default
+
   return (
     <>
       <SEO
@@ -68,6 +77,10 @@ export default function Home({ articles }: Props) {
               </div>
             </div>
           ))}
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
         </div>
         <Garrelys />
         <Link href={"/gallery"} passHref>
@@ -75,6 +88,9 @@ export default function Home({ articles }: Props) {
         </Link>
         <MiniCarousel />
         <CustomSlick />
+        <div>
+          <p></p>
+        </div>
       </div>
     </>
   );
