@@ -23,8 +23,8 @@ const CustomSlick = () => {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '300px',
-    slidesToShow: 3,
+    centerPadding: '440px',
+    slidesToShow: 1,
     slidesToScroll: 1,
     // オリジナルArrow
     prevArrow: <PrevArrow onClick={() => onclick} />,
@@ -43,8 +43,8 @@ const CustomSlick = () => {
             >
               <Image
                 src={img}
-                height={400}
-                width={400}
+                height={440}
+                width={440}
                 alt={"alt"}
               />
             </Link>
