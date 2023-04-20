@@ -1,0 +1,19 @@
+.likeButton {
+  width: 10%;
+  position: relative;
+}
+.likeInner {
+  position: absolute;
+  top: 0;
+}
+.likeStar {
+  position: absolute;
+  top: 0;
+  transform-origin: center;
+  transition: transform 5.0s ease-out;
+
+  &:hover {
+    transform: rotateY(360deg);
+    opacity: 0.8;
+  }
+}  

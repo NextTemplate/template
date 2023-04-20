@@ -10,9 +10,10 @@ import Garrelys from "../components/gallerys/Gallerys";
 import TopCarousel from "../components/home/TopCarousel";
 
 import Pagination from "../components/Pagination/";
+import LikeButton from "../components/likeButton";
 
-import MiniCarousel from "../components/home/MiniCarousel";
-import CustomSlick from "../components/Slick/Slick";
+// import MiniCarousel from "../components/home/MiniCarousel";
+// import CustomSlick from "../components/Slick/Slick";
 
 type Props = {
   articles: Array<Article>;
@@ -73,6 +74,7 @@ export default function Home({ articles, totalCount }: Props) {
                   <div className={styles.articleTag}>
                     {article.tag && <p className="">#{article.tag}</p>}
                   </div>
+                  <LikeButton />
                 </div>
               </div>
             </div>
@@ -86,8 +88,6 @@ export default function Home({ articles, totalCount }: Props) {
         <Link href={"/gallery"} passHref>
           <Button props={"View More"} />
         </Link>
-        <MiniCarousel />
-        <CustomSlick />
         <div>
           <p></p>
         </div>
