@@ -1,0 +1,50 @@
+.card {
+  background: #eeeeee;
+  width: 100%; // 1920に対して1320を算出
+  height: auto;
+  margin: 2rem auto 0;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.cardInner {
+  display: flex;
+
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.cardLeft {
+  box-sizing: border-box;
+  width: 50%;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.cardRight {
+  box-sizing: border-box;
+  width: 50%;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.cardRightTitle {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 1rem ;
+}
+.cardRightText {
+  margin: 1rem;
+}

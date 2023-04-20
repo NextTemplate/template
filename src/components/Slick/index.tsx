@@ -23,7 +23,7 @@ const CustomSlick = () => {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '440px',
+    centerPadding: '0',
     slidesToShow: 1,
     slidesToScroll: 1,
     // オリジナルArrow

@@ -11,9 +11,10 @@ import TopCarousel from "../components/home/TopCarousel";
 
 import Pagination from "../components/Pagination/";
 import LikeButton from "../components/likeButton";
+import FeatureCard from "../components/featureCard";
 
 // import MiniCarousel from "../components/home/MiniCarousel";
-import CustomSlick from "../components/Slick/Slick";
+import CustomSlick from "../components/Slick";
 
 type Props = {
   articles: Array<Article>;
@@ -89,6 +90,7 @@ export default function Home({ articles, totalCount }: Props) {
           <Button props={"View More"} />
         </Link>
         <CustomSlick />
+        <FeatureCard />
       </div>
     </>
   );
