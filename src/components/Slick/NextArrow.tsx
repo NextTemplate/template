@@ -10,8 +10,8 @@ const NextArrow: FC<Props> = ({ onClick }) => {
   return (
     <div className={styles.nextArrow} onClick={onClick}>
       <Image
-        src="/media/nextArrow.png"
-        alt="Next Arrow"
+        src={"/media/nextArrow.png"}
+        alt={"Next Arrow"}
         height={40}
         width={40}
       />
