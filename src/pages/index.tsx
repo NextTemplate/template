@@ -13,7 +13,7 @@ import Pagination from "../components/Pagination/";
 import LikeButton from "../components/likeButton";
 
 // import MiniCarousel from "../components/home/MiniCarousel";
-// import CustomSlick from "../components/Slick/Slick";
+import CustomSlick from "../components/Slick/Slick";
 
 type Props = {
   articles: Array<Article>;
@@ -88,9 +88,7 @@ export default function Home({ articles, totalCount }: Props) {
         <Link href={"/gallery"} passHref>
           <Button props={"View More"} />
         </Link>
-        <div>
-          <p></p>
-        </div>
+        <CustomSlick />
       </div>
     </>
   );

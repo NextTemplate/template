@@ -3,6 +3,9 @@ import React from "react";
 import Slider from "react-slick";
 import Link from "next/link"
 import Image from "next/image";
+import styles from "./Slick.module.scss";
+import PrevArrow from "./PrevArrow";
+import NextArrow from "./NextArrow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -20,15 +23,16 @@ const CustomSlick = () => {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '300px',
     slidesToShow: 3,
     slidesToScroll: 1,
     // オリジナルArrow
-    // prevArrow: <PrevArrow />,
-    // nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow onClick={() => onclick} />,
+    nextArrow: <NextArrow onClick={() => onclick} />,
   };
 
   return (
+    <div className={styles.slickBody}>
     <Slider {...settings}>
       {images.map((img) => {
         return (
@@ -48,6 +52,7 @@ const CustomSlick = () => {
         )
       })}
     </Slider>
+    </div>
   );
 }
 

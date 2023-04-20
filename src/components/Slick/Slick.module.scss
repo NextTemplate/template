@@ -1,0 +1,34 @@
+.slickBody {
+  box-sizing: border-box;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.slickInner {
+  background: pink;
+  max-width: 960px;
+  z-index: 1;
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━
+// prevArrowのcss
+// ━━━━━━━━━━━━━━━━━━━━━━━━
+.prevArrow {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  z-index: 2;
+  filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.2));
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━
+// nextArrowのcss
+// ━━━━━━━━━━━━━━━━━━━━━━━━
+.nextArrow {
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  z-index: 2;
+  filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.2));
+}
