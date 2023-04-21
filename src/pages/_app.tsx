@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
 import NextNprogress from "nextjs-progressbar";
-import Footer from "../components/layouts/Footer";
+import Footer from "../components/Footer";
 import HeaderMenu from "../components/layouts/Header";
 import HamburgeMenu from "../components/layouts/HamburgerMenu";
 

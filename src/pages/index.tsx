@@ -94,8 +94,8 @@ export default function Home({ articles, totalCount }: Props) {
         <CustomSlick />
         <FeatureCard />
         <MiniSlick />
-        <RadiusSlick />
         <ReverseFeatureCard />
+        <RadiusSlick />
       </div>
     </>
   );

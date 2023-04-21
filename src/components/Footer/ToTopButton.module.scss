@@ -1,0 +1,26 @@
+@keyframes rotateRightZAnime {
+from {
+    transform: rotateZ(0);
+  }
+to {
+    transform: rotateZ(360deg);
+  }
+}
+.toTopButton {
+  animation: rotateRightZAnime 8s ease-in-out alternate infinite;
+  background: url("/media/toTop.png") no-repeat center center / 64px auto;
+  border: none;
+  display: inline-block;
+  position: fixed;
+  right: 2rem;
+  bottom: 8rem;
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+  margin-top: 16px;
+
+  @media screen and (max-width:960px) {
+    right: 2rem;
+    bottom: 9rem;
+  }
+}

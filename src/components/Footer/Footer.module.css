@@ -1,0 +1,23 @@
+.mainFooter {
+  background-color: #333333;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footerLogoImg {
+  margin: 2rem;
+}
+
+.footerCopyLight {
+  text-align: center;
+}
+/*# sourceMappingURL=Footer.module.css.map */
