@@ -1,0 +1,56 @@
+.card {
+  background: #eeeeee;
+  max-width: 1024px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto 0;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.cardInner {
+  display: flex;
+
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    display: block;
+  }
+}
+.cardLeft {
+  box-sizing: border-box;
+  list-style: none;
+  width: 50%;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}
+.cardLeftImage {
+  z-index: 1;
+}
+.cardLeftTitle {
+  font-size: 3.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 1rem ;
+}
+.cardLeftText {
+  margin: 1rem;
+}
+.cardRight {
+  box-sizing: border-box;
+  width: 50%;
+  @media screen and (max-width:960px) {
+      
+  }
+  @media screen and (max-width:520px) {
+    width: 100%;
+  }
+}

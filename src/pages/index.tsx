@@ -12,6 +12,7 @@ import TopCarousel from "../components/home/TopCarousel";
 import Pagination from "../components/Pagination/";
 import LikeButton from "../components/likeButton";
 import FeatureCard from "../components/featureCard";
+import ReverseFeatureCard from "../components/ReverseFeatureCard";
 // import MiniCarousel from "../components/home/MiniCarousel";
 import CustomSlick from "../components/Slick";
 import MiniSlick from "../components/MiniSlick";
@@ -94,6 +95,7 @@ export default function Home({ articles, totalCount }: Props) {
         <FeatureCard />
         <MiniSlick />
         <RadiusSlick />
+        <ReverseFeatureCard />
       </div>
     </>
   );
