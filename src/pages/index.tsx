@@ -12,10 +12,10 @@ import TopCarousel from "../components/home/TopCarousel";
 import Pagination from "../components/Pagination/";
 import LikeButton from "../components/likeButton";
 import FeatureCard from "../components/featureCard";
-
 // import MiniCarousel from "../components/home/MiniCarousel";
 import CustomSlick from "../components/Slick";
 import MiniSlick from "../components/MiniSlick";
+import RadiusSlick from "../components/RadiusSlick/";
 
 type Props = {
   articles: Array<Article>;
@@ -93,6 +93,7 @@ export default function Home({ articles, totalCount }: Props) {
         <CustomSlick />
         <FeatureCard />
         <MiniSlick />
+        <RadiusSlick />
       </div>
     </>
   );
