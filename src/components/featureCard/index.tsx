@@ -4,13 +4,9 @@ import styles from "./featureCard.module.scss";
 
 const card = {
   leftImage: "/media/likeButton_00.png",
-  rightImage: "/media/sample_00.png",
-  rightTitle: "ここにお客様の心揺さぶるタイトルを",
+  rightImage: "/media/sample_000.png",
+  rightTitle: "お客様の心揺さぶるタイトルを",
   rightText: "\
-  ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
-  ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
-  ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
-  ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
   ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
   ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
   ここにテキストが入ります。割と長めの文字を入れることで、このcardの内容を伝えます。\
@@ -33,7 +29,7 @@ export default function FeatureCard() {
 
           <div className={styles.cardRight}>
             <ul>
-              <li>
+              <li className={styles.cardRightImage}>
               <Image
                 src={card.rightImage}
                 alt={""}

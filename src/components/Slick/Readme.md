@@ -15,7 +15,7 @@
    
    例:
    - src/pages/index.tsx にてimport.
-   - <Slick />として配置。
+   - <ComponentFileName />として配置。
    - src/components/Slick/index.tsx内、imagesに必要なimage pathとrinkを記入してください。
 
 4. 本番環境にはこのReadme.mdをアップロードしないように注意してください。本番環境にアップロードする際には削除してね。
