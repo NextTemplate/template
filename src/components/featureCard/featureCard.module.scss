@@ -1,6 +1,7 @@
 .card {
   background: #eeeeee;
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   height: auto;
   margin: 2rem auto 0;
   @media screen and (max-width:960px) {

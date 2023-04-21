@@ -15,6 +15,7 @@ import FeatureCard from "../components/featureCard";
 
 // import MiniCarousel from "../components/home/MiniCarousel";
 import CustomSlick from "../components/Slick";
+import MiniSlick from "../components/MiniSlick";
 
 type Props = {
   articles: Array<Article>;
@@ -91,6 +92,7 @@ export default function Home({ articles, totalCount }: Props) {
         </Link>
         <CustomSlick />
         <FeatureCard />
+        <MiniSlick />
       </div>
     </>
   );
