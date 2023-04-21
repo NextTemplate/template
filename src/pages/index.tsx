@@ -8,6 +8,7 @@ import type { Article } from "../types/article";
 import Button from "../components/layouts/Button";
 import Garrelys from "../components/gallerys/Gallerys";
 import TopCarousel from "../components/home/TopCarousel";
+import Buble from "../components/buble";
 
 import Pagination from "../components/Pagination/";
 import LikeButton from "../components/likeButton";
@@ -96,6 +97,7 @@ export default function Home({ articles, totalCount }: Props) {
         <MiniSlick />
         <ReverseFeatureCard />
         <RadiusSlick />
+        <Buble />
       </div>
     </>
   );

@@ -11,6 +11,7 @@ export default function Footer() {
   const gallery = data.gallery;
   const vision = data.vision;
   return (
+    <>
     <footer className={`${styles.mainFooter} ${styles.animeBody}`}>
       <UnderNotice />
       <div className={styles.footerContents}>
@@ -117,6 +118,7 @@ export default function Footer() {
       </div>
       <p className={styles.footerCopyLight}>&copy; 2022-<GetCurrentYear /> example.</p>
     </footer>
+    </>
   );
 }
 
