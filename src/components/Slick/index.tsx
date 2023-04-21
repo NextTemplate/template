@@ -1,4 +1,3 @@
-// https://github.com/akiran/react-slick
 import React from "react";
 import Slider from "react-slick";
 import Link from "next/link"
