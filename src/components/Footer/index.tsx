@@ -4,6 +4,7 @@ import styles from "./Footer.module.scss";
 import ToTopButton from "./ToTopButton";
 import UnderNotice from "./UnderNotice";
 import data from "../../data/footer.json";
+import GetCurrentYear from "../CurrentYear";
 
 export default function Footer() {
   const about = data.about;
@@ -114,7 +115,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className={styles.footerCopyLight}>&copy; 2023 example.</p>
+      <p className={styles.footerCopyLight}>&copy; 2022-<GetCurrentYear /> example.</p>
     </footer>
   );
 }
