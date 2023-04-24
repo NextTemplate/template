@@ -1,0 +1,41 @@
+.list {
+  background: red;
+  box-sizing: border-box;
+  max-width: 1360px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.listInner {
+  background: blue;
+  width: 100%;
+  margin: 0 auto;
+}
+.listTitle {
+   
+}
+.listMainTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.listSubTitle {
+
+}
+.listContent {
+  border: solid 1px orange;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.listDetailTitle {
+  background: green;
+  width: 30%;
+}
+.listDetail {
+  background: yellow;
+  width: 70%;
+}
+

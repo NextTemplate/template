@@ -18,6 +18,7 @@ import ReverseFeatureCard from "../components/ReverseFeatureCard";
 import CustomSlick from "../components/Slick";
 import MiniSlick from "../components/MiniSlick";
 import RadiusSlick from "../components/RadiusSlick/";
+import AchievementList from "../components/List/Achievement";
 
 type Props = {
   articles: Array<Article>;
@@ -98,6 +99,7 @@ export default function Home({ articles, totalCount }: Props) {
         <ReverseFeatureCard />
         <RadiusSlick />
         <Buble />
+        <AchievementList />
       </div>
     </>
   );
